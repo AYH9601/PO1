@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&family=Raleway:wght@100&family=Roboto&family=Work+Sans:wght@100&display=swap');
+* {margin: 0; padding: 0; box-sizing: border-box;}
+ul,ol,li {list-style: none;}
+a {text-decoration: none;}
+
+#header {
+    width: 100%;
+
+    //임시 구별용 배경색
+    background-color: blue;
+    
+    .inner {
+        width: 1800px;
+        height: 110px;
+        margin: 0 auto;
+        position: relative;
+
+        >h1 {
+            position: absolute;
+            left: 0;
+            bottom: 30px;
+
+            img {
+                width: 50px;
+                margin-bottom: -10px;
+            }
+
+            a {
+                font: bold 40px/1 "Roboto";
+                color: #fff;
+            }
+        }
+
+        #gnb {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+
+            .first {
+                float: left;
+                a {
+                    display: inline-block;
+                    padding: 30px 20px;
+                    font: bold 15px/1 "Roboto";
+                    color: red;
+                }
+            }
+
+            li {
+                float: left;
+
+                a {
+                    display: inline-block;
+                    padding: 30px 25px;
+                    font: bold 15px/1 "Roboto";
+                    color: #fff;
+                }
+            }
+        }
+
+        .util {
+            position: absolute;
+            right: 0;
+            top: 20px;
+
+            li {
+                float: left;
+                
+                a {
+                    display: inline-block;
+                    padding-bottom: 30px;
+                    padding-right: 25px;
+                    font: bold 15px/1 "Roboto";
+                    color: #fff;
+                }
+            }
+
+            .join {
+                float: left;
+                
+                a {
+                    display: inline-block;
+                    padding-bottom: 30px;
+                    padding-right: 25px;
+                    font: bold 15px/1 "Roboto";
+                    color: red;
+                }
+            }
+        }
+    }
+}
