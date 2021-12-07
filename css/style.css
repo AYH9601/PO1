@@ -14,6 +14,7 @@ a {
   width: 100%;
   background-color: blue; }
   #header .inner {
+    z-index: 1;
     width: 1800px;
     height: 110px;
     margin: 0 auto;
@@ -66,5 +67,42 @@ a {
           padding-right: 25px;
           font: bold 15px/1 "Roboto";
           color: red; }
+
+#visual {
+  width: 100%;
+  height: 100%;
+  background: #999;
+  position: relative; }
+  #visual img {
+    z-index: 3;
+    transform: translateY(-110px);
+    width: 100%;
+    height: 100%;
+    opacity: 0.8; }
+  #visual .inner {
+    width: 850px;
+    margin: 0 auto;
+    position: absolute;
+    top: 20%;
+    left: 28%; }
+    #visual .inner h1 {
+      font: bold 40px/1.3 'Roboto';
+      color: #fff;
+      margin-bottom: 20px;
+      text-align: center; }
+    #visual .inner #figBox {
+      position: absolute;
+      width: 1300px;
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      left: -200px; }
+    #visual .inner li {
+      padding: 20px;
+      border-right: 3px solid #999; }
+      #visual .inner li a {
+        font: bold 15px/1 "Roboto";
+        color: red;
+        text-align: left; }
 
 /*# sourceMappingURL=style.css.map */
