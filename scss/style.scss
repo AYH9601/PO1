@@ -8,7 +8,8 @@ a {text-decoration: none;}
     width: 100%;
 
     //임시 구별용 배경색
-    background-color: blue;
+    // background-color: blue;
+    background: #999;
     
     .inner {
         z-index: 1;
@@ -100,7 +101,7 @@ a {text-decoration: none;}
     position: relative;
 
     img {
-        z-index: 3;
+        z-index: 2;
         transform: translateY(-110px);
         width: 100%;
         height: 100%;
@@ -120,27 +121,64 @@ a {text-decoration: none;}
             color:#fff; 
             margin-bottom:20px; 
             text-align: center;
+            margin-bottom: 50px;
         }
 
         #figBox {
-            position: absolute;
+            transform: translateX(-200px);
             width: 1300px;
-            display: flex;
-            justify-content: space-between;
+            float: left;
             background: #fff;
-            left: -200px;
+            margin-bottom: 200px;
+
+            li {
+                width: 260px;
+                float: left;
+                padding: 20px;
+                border-right: 1px solid rgb(221, 221, 221);
+
+                a {
+                    font: bold 15px/1 "Roboto";
+                    color: red;    
+                }
+
+                &:last-child {
+                    background: red; 
+                    border-right: none;
+                    text-align: center;
+                    
+                    a {
+                        color: #fff;
+                    }
+                }
+            }
         }
 
-        li {
-            padding: 20px;
-            border-right: 3px solid #999;
+        #figBox2 {
+            transform: translateX(-200px);
+            width: 1300px;
+            height: 180px;
+            float: left;
+            background: #fff;
 
-            a {
-                font: bold 15px/1 "Roboto";
-                color: red;
-                text-align: left;
+            li {
+                width: 325px;
+                float: left;
+                padding: 20px;
+                text-align: center;
+
+
+                h2 {
+                    font: bold 40px/3 "Roboto";
+                    color: #000;    
+                }
+
+                p {
+                    font: bold 15px/1 "Roboto";
+                    margin-top: -25px;
+                    color: #888; 
+                }
             }
         }
     }
-
 }
