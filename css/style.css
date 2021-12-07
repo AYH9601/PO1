@@ -72,10 +72,10 @@ a {
   width: 100%;
   height: 100%;
   background: #999;
-  position: relative; }
+  position: relative;
+  transform: translateY(-110px); }
   #visual img {
     z-index: 2;
-    transform: translateY(-110px);
     width: 100%;
     height: 100%;
     opacity: 0.8; }
@@ -129,5 +129,41 @@ a {
           font: bold 15px/1 "Roboto";
           margin-top: -25px;
           color: #888; }
+
+#see {
+  width: 100%;
+  padding: 200px auto;
+  background-color: #999; }
+  #see .inner {
+    width: 1300px;
+    margin: 0 auto;
+    transform: translateX(30px); }
+    #see .inner .wrap {
+      width: 100%; }
+      #see .inner .wrap article {
+        width: 420px;
+        float: left;
+        margin-right: 20px;
+        background-color: #fff; }
+        #see .inner .wrap article:last-child {
+          margin-right: 0; }
+        #see .inner .wrap article .pic {
+          width: 40%;
+          height: 40%; }
+          #see .inner .wrap article .pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: 0.5s; }
+          #see .inner .wrap article .pic:hover img {
+            transform: scale(1.1); }
+        #see .inner .wrap article h2 {
+          margin-bottom: 10px; }
+          #see .inner .wrap article h2 a {
+            font: bold 16px/1 'arial';
+            color: #555; }
+        #see .inner .wrap article p {
+          font: 14px/1.4 'arial';
+          color: #777; }
 
 /*# sourceMappingURL=style.css.map */
