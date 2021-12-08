@@ -15,6 +15,11 @@ a {
   display: block;
   clear: both; }
 
+.tips::after {
+  content: '';
+  display: block;
+  clear: both; }
+
 #header {
   width: 100%;
   background-color: #f0f0f0; }
@@ -246,90 +251,141 @@ a {
         font: bold 15px/3.6 "Roboto";
         color: #fff;
         margin-bottom: 100px; }
-    #area .inner .TIPS {
-      width: 1180px;
-      margin: 0 auto;
-      border-top: 2px solid #f0f0f0;
-      text-align: center; }
-      #area .inner .TIPS h1 {
-        text-align: center;
-        font: bold 25px/1 "Roboto";
-        margin-top: 100px;
-        margin-bottom: 10px; }
-      #area .inner .TIPS > h2 {
-        text-align: center;
-        margin-bottom: 100px;
+
+#ARTICLES {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 50px; }
+  #ARTICLES .tips {
+    width: 1180px;
+    margin: 0 auto;
+    border-top: 2px solid #f0f0f0;
+    text-align: center; }
+    #ARTICLES .tips h1 {
+      text-align: center;
+      font: bold 25px/1 "Roboto";
+      margin-top: 100px;
+      margin-bottom: 10px; }
+    #ARTICLES .tips > h2 {
+      text-align: center;
+      margin-bottom: 100px;
+      font: bold 15px/1 "Roboto";
+      color: #888; }
+    #ARTICLES .tips article {
+      float: left;
+      width: 590px;
+      height: 200px; }
+      #ARTICLES .tips article div {
+        width: 30%;
+        height: 150px;
+        float: left; }
+        #ARTICLES .tips article div h1 {
+          margin-top: 5px;
+          font: bold 70px/1 "Roboto";
+          color: red; }
+        #ARTICLES .tips article div p {
+          font: bold 18px/1 "Roboto";
+          color: #000; }
+      #ARTICLES .tips article h2 {
+        text-align: left;
+        font: bold 20px/1.3 "Roboto"; }
+        #ARTICLES .tips article h2 a {
+          color: #000; }
+      #ARTICLES .tips article > p {
+        text-align: left;
+        margin-top: 8px;
+        font: bold 12px/1 "Roboto";
+        color: #999; }
+      #ARTICLES .tips article h3 {
+        text-align: left;
+        margin-top: 20px;
         font: bold 15px/1 "Roboto";
-        color: #888; }
-      #area .inner .TIPS article {
-        float: left;
-        width: 590px;
-        height: 200px; }
-        #area .inner .TIPS article div {
-          width: 30%;
-          height: 150px;
-          float: left; }
-          #area .inner .TIPS article div h1 {
-            margin-top: 5px;
-            font: bold 70px/1 "Roboto";
-            color: red; }
-          #area .inner .TIPS article div p {
-            font: bold 18px/1 "Roboto";
-            color: #000; }
-        #area .inner .TIPS article h2 {
-          text-align: left;
-          font: bold 20px/1.3 "Roboto"; }
-          #area .inner .TIPS article h2 a {
-            color: #000; }
-        #area .inner .TIPS article > p {
-          text-align: left;
-          margin-top: 8px;
-          font: bold 12px/1 "Roboto";
-          color: #999; }
-        #area .inner .TIPS article h3 {
-          text-align: left;
-          margin-top: 20px;
-          font: bold 15px/1 "Roboto";
-          color: #777; }
+        color: #777; }
 
 #Engine {
-  transform: translateY(200px);
   width: 100%;
-  height: 300px;
+  height: 220px;
   background-color: #f0f0f0; }
   #Engine .inner {
     width: 1180px;
-    margin: 0 auto; }
-    #Engine .inner article {
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 80px;
+    transform: translateX(50px); }
+    #Engine .inner ::after {
+      content: '';
+      display: block;
+      clear: both; }
+    #Engine .inner article:nth-child(1) {
+      width: 300px;
       float: left; }
-      #Engine .inner article:nth-child(1) {
-        width: 300px; }
-        #Engine .inner article:nth-child(1) h1 {
-          text-align: left;
-          font: bold 25px/1 "Roboto";
-          margin-bottom: 15px; }
-        #Engine .inner article:nth-child(1) p {
-          text-align: left;
-          font: bold 15px/1 "Roboto";
-          color: #888; }
-      #Engine .inner article:nth-child(2) {
-        width: 780px;
-        float: right; }
-        #Engine .inner article:nth-child(2) input[type=text] {
-          width: 500px;
-          height: 55px;
-          border: none;
-          padding-left: 30px;
-          box-sizing: border-box;
-          font: bold 12px/1px "Roboto"; }
-        #Engine .inner article:nth-child(2) .btnSearch {
-          width: 200px;
-          height: 55px;
-          background: red;
-          font: bold 15px/30px "Roboto";
-          color: #fff;
-          text-align: center;
-          cursor: pointer;
-          border: none; }
+      #Engine .inner article:nth-child(1) h1 {
+        text-align: left;
+        font: bold 25px/1 "Roboto";
+        margin-bottom: 15px; }
+      #Engine .inner article:nth-child(1) p {
+        text-align: left;
+        font: bold 15px/1 "Roboto";
+        color: #888; }
+    #Engine .inner article:nth-child(2) {
+      width: 780px;
+      float: right; }
+      #Engine .inner article:nth-child(2) input[type=text] {
+        width: 500px;
+        height: 55px;
+        border: none;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font: bold 12px/1px "Roboto"; }
+      #Engine .inner article:nth-child(2) .btnSearch {
+        width: 200px;
+        height: 55px;
+        background: red;
+        font: bold 15px/30px "Roboto";
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        border: none; }
+
+#footer {
+  width: 100%;
+  padding: 100px 0;
+  background: #fff; }
+  #footer .inner {
+    width: 100%;
+    margin: 0 auto; }
+    #footer .inner::after {
+      content: "";
+      display: block;
+      clear: both; }
+    #footer .inner article {
+      width: 20%;
+      float: left; }
+      #footer .inner article:nth-of-type(1) > h1 {
+        padding-left: 60px; }
+        #footer .inner article:nth-of-type(1) > h1 img {
+          width: 50px;
+          margin-bottom: -10px; }
+        #footer .inner article:nth-of-type(1) > h1 a {
+          font: bold 40px/1 "Roboto";
+          color: #000; }
+      #footer .inner article:nth-of-type(2) {
+        font: bold 15px/1.5 "Roboto";
+        color: #888; }
+      #footer .inner article:nth-of-type(3) {
+        font: bold 15px/1.5 "Roboto";
+        color: #888; }
+      #footer .inner article:nth-of-type(4) {
+        font: bold 15px/1.5 "Roboto";
+        color: #888; }
+      #footer .inner article:nth-of-type(5) {
+        font: bold 15px/1 "Roboto";
+        color: #888; }
+        #footer .inner article:nth-of-type(5) li {
+          float: left; }
+          #footer .inner article:nth-of-type(5) li i {
+            font-size: 35px;
+            color: #c5c5c5;
+            padding-left: 30px; }
 
 /*# sourceMappingURL=style.css.map */
