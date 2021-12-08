@@ -10,18 +10,23 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
+.wrap::after {
+  content: '';
+  display: block;
+  clear: both; }
+
 #header {
   width: 100%;
-  background: #999; }
+  background-color: #f0f0f0; }
   #header .inner {
     z-index: 1;
-    width: 1800px;
+    width: 100%;
     height: 110px;
     margin: 0 auto;
     position: relative; }
     #header .inner > h1 {
       position: absolute;
-      left: 0;
+      left: 70px;
       bottom: 30px; }
       #header .inner > h1 img {
         width: 50px;
@@ -32,7 +37,8 @@ a {
     #header .inner #gnb {
       position: absolute;
       right: 0;
-      bottom: 0; }
+      bottom: 0;
+      margin-right: 70px; }
       #header .inner #gnb .first {
         float: left; }
         #header .inner #gnb .first a {
@@ -50,7 +56,8 @@ a {
     #header .inner .util {
       position: absolute;
       right: 0;
-      top: 20px; }
+      top: 20px;
+      margin-right: 70px; }
       #header .inner .util li {
         float: left; }
         #header .inner .util li a {
@@ -71,20 +78,21 @@ a {
 #visual {
   width: 100%;
   height: 100%;
-  background: #999;
-  position: relative;
-  transform: translateY(-110px); }
+  background-color: #f0f0f0;
+  position: relative; }
   #visual img {
     z-index: 2;
     width: 100%;
     height: 100%;
-    opacity: 0.8; }
+    opacity: 0.8;
+    transform: translateY(-110px); }
   #visual .inner {
-    width: 850px;
+    width: 1180px;
     margin: 0 auto;
     position: absolute;
-    top: 20%;
-    left: 28%; }
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
     #visual .inner h1 {
       font: bold 40px/1.3 'Roboto';
       color: #fff;
@@ -92,13 +100,12 @@ a {
       text-align: center;
       margin-bottom: 50px; }
     #visual .inner #figBox {
-      transform: translateX(-200px);
-      width: 1300px;
+      width: 1180px;
       float: left;
       background: #fff;
       margin-bottom: 200px; }
       #visual .inner #figBox li {
-        width: 260px;
+        width: 236px;
         float: left;
         padding: 20px;
         border-right: 1px solid #dddddd; }
@@ -112,13 +119,12 @@ a {
           #visual .inner #figBox li:last-child a {
             color: #fff; }
     #visual .inner #figBox2 {
-      transform: translateX(-200px);
-      width: 1300px;
+      width: 1180px;
       height: 180px;
       float: left;
       background: #fff; }
       #visual .inner #figBox2 li {
-        width: 325px;
+        width: 295px;
         float: left;
         padding: 20px;
         text-align: center; }
@@ -132,38 +138,158 @@ a {
 
 #see {
   width: 100%;
-  padding: 200px auto;
-  background-color: #999; }
+  background-color: #f0f0f0;
+  padding-bottom: 200px; }
   #see .inner {
-    width: 1300px;
+    width: 1180px;
     margin: 0 auto;
-    transform: translateX(30px); }
+    background-color: #f0f0f0; }
+    #see .inner h1 {
+      text-align: center;
+      font: bold 25px/1 "Roboto";
+      margin-bottom: 10px; }
+    #see .inner h2 {
+      text-align: center;
+      margin-bottom: 100px;
+      font: bold 15px/1 "Roboto";
+      color: #888; }
     #see .inner .wrap {
-      width: 100%; }
+      width: 100%;
+      background-color: #f0f0f0; }
       #see .inner .wrap article {
-        width: 420px;
+        width: 370px;
+        height: 450px;
         float: left;
-        margin-right: 20px;
-        background-color: #fff; }
+        margin-right: 35px;
+        background-color: #fff;
+        padding-top: 100px; }
         #see .inner .wrap article:last-child {
           margin-right: 0; }
         #see .inner .wrap article .pic {
-          width: 40%;
-          height: 40%; }
+          width: 100px;
+          height: 100px;
+          margin: 0 auto;
+          margin-bottom: 60px; }
           #see .inner .wrap article .pic img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: 0.5s; }
-          #see .inner .wrap article .pic:hover img {
-            transform: scale(1.1); }
+            width: 100px;
+            height: 100px; }
         #see .inner .wrap article h2 {
           margin-bottom: 10px; }
           #see .inner .wrap article h2 a {
-            font: bold 16px/1 'arial';
-            color: #555; }
+            font: bold 20px/1.3 "Roboto";
+            color: #000; }
         #see .inner .wrap article p {
-          font: 14px/1.4 'arial';
+          font: bold 14px/1 "Roboto";
+          color: #999;
+          text-align: center; }
+
+#area {
+  width: 100%;
+  background-color: #fff; }
+  #area .inner {
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff; }
+    #area .inner h1 {
+      text-align: center;
+      font: bold 25px/1 "Roboto";
+      margin-top: 100px;
+      margin-bottom: 10px; }
+    #area .inner > h2 {
+      text-align: center;
+      margin-bottom: 100px;
+      font: bold 15px/1 "Roboto";
+      color: #888; }
+    #area .inner .wrap {
+      width: 100%;
+      background-color: #fff;
+      margin-bottom: 80px; }
+      #area .inner .wrap article {
+        width: 374px;
+        height: 450px;
+        float: left;
+        margin-right: 8px;
+        background-color: #fff; }
+        #area .inner .wrap article:last-child {
+          margin-right: 0; }
+        #area .inner .wrap article .pic {
+          width: 374px;
+          height: 270px;
+          margin: 0 auto;
+          margin-bottom: 60px; }
+          #area .inner .wrap article .pic img {
+            width: 374px;
+            height: 270px; }
+        #area .inner .wrap article h2 {
+          text-align: center;
+          margin-bottom: 10px; }
+          #area .inner .wrap article h2 a {
+            font: bold 20px/1.3 "Roboto";
+            color: #000; }
+        #area .inner .wrap article p {
+          font: bold 14px/1 "Roboto";
+          color: #999;
+          text-align: center;
+          margin-bottom: 20px; }
+        #area .inner .wrap article h3 {
+          text-align: center;
+          font: bold 25px/1 "Roboto";
+          color: red; }
+    #area .inner .MORE {
+      text-align: center; }
+      #area .inner .MORE a {
+        display: inline-block;
+        background-color: red;
+        width: 250px;
+        height: 50px;
+        text-align: center;
+        font: bold 15px/3.6 "Roboto";
+        color: #fff;
+        margin-bottom: 100px; }
+    #area .inner .TIPS {
+      width: 1180px;
+      margin: 0 auto;
+      border-top: 2px solid #f0f0f0;
+      text-align: center; }
+      #area .inner .TIPS h1 {
+        text-align: center;
+        font: bold 25px/1 "Roboto";
+        margin-top: 100px;
+        margin-bottom: 10px; }
+      #area .inner .TIPS > h2 {
+        text-align: center;
+        margin-bottom: 100px;
+        font: bold 15px/1 "Roboto";
+        color: #888; }
+      #area .inner .TIPS article {
+        float: left;
+        width: 590px;
+        margin-bottom: 100px; }
+        #area .inner .TIPS article div {
+          width: 30%;
+          height: 150px;
+          float: left; }
+          #area .inner .TIPS article div h1 {
+            margin-top: 5px;
+            font: bold 70px/1 "Roboto";
+            color: red; }
+          #area .inner .TIPS article div p {
+            font: bold 18px/1 "Roboto";
+            color: #000; }
+        #area .inner .TIPS article h2 {
+          text-align: left;
+          font: bold 20px/1.3 "Roboto"; }
+          #area .inner .TIPS article h2 a {
+            color: #000; }
+        #area .inner .TIPS article > p {
+          text-align: left;
+          margin-top: 8px;
+          font: bold 12px/1 "Roboto";
+          color: #999; }
+        #area .inner .TIPS article h3 {
+          text-align: left;
+          margin-top: 20px;
+          font: bold 15px/1 "Roboto";
           color: #777; }
 
 /*# sourceMappingURL=style.css.map */

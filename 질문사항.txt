@@ -1,0 +1,3 @@
+header 뒷부분까지 figure의 이미지로 채워넣기위해
+header의 background를 투명으로 처리하고 figure를
+header의 높이만큼 올렸더니 아래에 여백이 생겨버리는문제
