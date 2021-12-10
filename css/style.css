@@ -154,6 +154,12 @@
     height: 100%;
     background: #fff;
     padding-bottom: 100px; }
+    #pro .us .sub_visual {
+      width: 100%;
+      height: 250px;
+      background: #f0f0f0;
+      background: url(../img/iceland.jpg) no-repeat center/cover;
+      opacity: 0.8; }
     #pro .us .team {
       padding-top: 100px;
       margin: 0 auto; }
@@ -262,6 +268,120 @@
             font-size: 30px;
             text-shadow: 2px 2px 2px #ddd;
             color: #555; }
+
+.community {
+  width: 100%; }
+  .community .sub_visual {
+    width: 100%;
+    height: 250px;
+    background: #f0f0f0;
+    background: url(../img/iceland.jpg) no-repeat center/cover;
+    opacity: 0.8;
+    margin-bottom: 100px; }
+  .community .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    .community .inner h1 {
+      font: bold 30px/1 "Roboto";
+      padding-bottom: 30px; }
+      .community .inner h1 img {
+        display: inline-block;
+        width: 40px;
+        margin-right: 10px;
+        transform: translateY(10px); }
+    .community .inner .searchBox {
+      width: 100%;
+      background-color: #f0f0f0;
+      height: 120px;
+      margin-bottom: 50px;
+      text-align: center; }
+      .community .inner .searchBox .SelectCommunity {
+        display: inline-block;
+        width: 120px;
+        height: 35px;
+        background: #555; }
+        .community .inner .searchBox .SelectCommunity a {
+          font: bold 12px/1 'Roboto';
+          text-align: center;
+          line-height: 35px;
+          color: #fff; }
+      .community .inner .searchBox input[type=text] {
+        display: inline-block;
+        width: 500px;
+        height: 35px;
+        border: none;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font: bold 12px/1px "Roboto";
+        margin-top: 45px; }
+      .community .inner .searchBox .btnSearch {
+        display: inline-block;
+        width: 150px;
+        height: 35px;
+        background: #e60000;
+        font: bold 12px/30px "Roboto";
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        border: none; }
+    .community .inner table {
+      width: 100%;
+      border-bottom: 2px solid #111;
+      margin-bottom: 50px;
+      border-collapse: collapse; }
+      .community .inner table tr:hover td {
+        background: #f0f0f0; }
+      .community .inner table th {
+        padding: 15px;
+        background: #fff;
+        color: #444;
+        border-bottom: 2px solid #555; }
+        .community .inner table th:nth-of-type(1) {
+          width: 10%; }
+        .community .inner table th:nth-of-type(3) {
+          width: 15%; }
+        .community .inner table th:nth-of-type(4) {
+          width: 15%; }
+      .community .inner table td {
+        padding: 13px;
+        font-weight: bold;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+        color: #555; }
+        .community .inner table td:nth-of-type(2) {
+          text-align: left; }
+          .community .inner table td:nth-of-type(2) a {
+            float: left;
+            color: #333;
+            font-family: "Roboto";
+            font-weight: normal;
+            line-height: 1.4; }
+        .community .inner table td:nth-of-type(3) {
+          font-family: "Roboto"; }
+    .community .inner .pagination {
+      width: 100%;
+      text-align: center; }
+      .community .inner .pagination::after {
+        content: '';
+        display: block;
+        clear: both; }
+      .community .inner .pagination .numbers {
+        display: inline-block;
+        text-align: center;
+        font-size: 0; }
+        .community .inner .pagination .numbers a {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          border: 1px solid #888;
+          font: 11px/30px 'Roboto';
+          color: #666;
+          text-align: center;
+          margin: 0 5px;
+          transition: 0.5s; }
+          .community .inner .pagination .numbers a:hover {
+            background: #666;
+            color: #fff; }
 
 * {
   margin: 0;

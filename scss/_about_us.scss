@@ -214,6 +214,7 @@
 }
 
 #pro {
+
     width: 100%;
     height: 100%;
     background-color: rgb(240, 240, 240);
@@ -225,6 +226,14 @@
         background: #fff;
         padding-bottom: 100px;
 
+        .sub_visual {
+            width:100%; 
+            height:250px; 
+            
+            background:rgb(240, 240, 240); 
+            background: url(../img/iceland.jpg) no-repeat center/cover;
+            opacity: 0.8;
+        }
         .team {
             padding-top: 100px;
             margin: 0 auto;
