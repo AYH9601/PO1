@@ -72,7 +72,7 @@
         display: block;
         width: 100%;
         height: 2px;
-        background: #fff;
+        background: #999;
         position: absolute;
         top: 0;
         left: 0;
@@ -82,7 +82,7 @@
         display: block;
         width: 100%;
         height: 2px;
-        background: #fff;
+        background: #999;
         position: absolute;
         bottom: 0;
         left: 0;
@@ -91,7 +91,7 @@
         display: block;
         width: 100%;
         height: 2px;
-        background: #fff;
+        background: #999;
         position: absolute;
         top: 50%;
         margin-top: -1px;
@@ -264,12 +264,71 @@
           display: inline-block;
           padding: 10px 31px; }
           #pro .inner .profile1 .contact li i {
+            cursor: pointer;
             text-align: center;
             /* 20% 너비 안에서 가운데 배치를 한 것 */
             font-size: 30px;
             text-shadow: 2px 2px 2px #ddd;
             color: #555; }
 
+@media screen and (max-width: 1179px) {
+  #header_us .inner {
+    width: 100%;
+    height: 100px; }
+    #header_us .inner > h1 {
+      left: 20px; }
+    #header_us .inner .menuWeb {
+      display: none; }
+    #header_us .inner .btnCall {
+      display: block; }
+
+  #pro .us .team > h1 {
+    font: bold 60px/1 "Roboto";
+    margin-bottom: 15px; }
+    #pro .us .team > h1 img {
+      width: 120px; }
+  #pro .us .team p {
+    font: bold 20px/1.3 "Roboto";
+    margin-bottom: 30px; }
+  #pro .us .team ul {
+    text-align: center; }
+    #pro .us .team ul li {
+      margin-right: 25px; }
+      #pro .us .team ul li:last-child {
+        margin-right: 0px; } }
+@media screen and (max-width: 539px) {
+  #header_us .inner {
+    width: 100%;
+    height: 100px; }
+    #header_us .inner > h1 {
+      left: 10px; }
+      #header_us .inner > h1 img {
+        width: 40px;
+        margin-bottom: -10px; }
+      #header_us .inner > h1 a {
+        font: bold 30px/1 "Roboto";
+        color: #999; }
+    #header_us .inner .menuWeb {
+      display: none; }
+    #header_us .inner .btnCall {
+      display: block; }
+
+  #pro .us .team > h1 {
+    font: bold 40px/1 "Roboto";
+    margin-bottom: 15px; }
+    #pro .us .team > h1 img {
+      width: 100px; }
+  #pro .us .team p {
+    font: bold 15px/1.3 "Roboto";
+    margin-bottom: 30px; }
+  #pro .us .team ul {
+    text-align: center;
+    margin-bottom: -80px; }
+    #pro .us .team ul li {
+      width: 20%;
+      margin-bottom: 15px; }
+      #pro .us .team ul li:last-child {
+        margin-right: 0px; } }
 .community {
   width: 100%;
   border-bottom: 2px solid #f0f0f0; }
@@ -387,6 +446,124 @@
             background: #666;
             color: #fff; }
 
+@media screen and (max-width: 1179px) {
+  .community .inner {
+    width: 100%; }
+    .community .inner > h1 {
+      text-align: center;
+      font: bold 30px/1 "Roboto";
+      padding-bottom: 30px;
+      color: #555; }
+      .community .inner > h1 img {
+        display: inline-block;
+        width: 40px;
+        margin-right: 10px;
+        transform: translateY(10px); }
+    .community .inner .searchBox {
+      width: 100%;
+      background-color: #f0f0f0;
+      height: 120px;
+      margin-bottom: 50px;
+      text-align: center; }
+      .community .inner .searchBox .SelectCommunity {
+        display: inline-block;
+        width: 120px;
+        height: 35px;
+        background: #555; }
+        .community .inner .searchBox .SelectCommunity a {
+          font: bold 12px/1 'Roboto';
+          text-align: center;
+          line-height: 35px;
+          color: #fff; }
+      .community .inner .searchBox input[type=text] {
+        display: inline-block;
+        width: 500px;
+        height: 35px;
+        border: none;
+        padding-left: 30px;
+        box-sizing: border-box;
+        font: bold 12px/1px "Roboto";
+        margin-top: 45px; }
+      .community .inner .searchBox .btnSearch {
+        display: inline-block;
+        width: 150px;
+        height: 35px;
+        background: #e60000;
+        font: bold 12px/30px "Roboto";
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+        border: none; }
+    .community .inner table th:nth-of-type(1) {
+      width: 15%; }
+    .community .inner table th:nth-of-type(3) {
+      width: 17%; }
+    .community .inner table th:nth-of-type(4) {
+      width: 0%;
+      display: none; }
+    .community .inner table td:nth-of-type(4) {
+      width: 0%;
+      display: none; }
+    .community .inner .pagination {
+      width: 100%;
+      text-align: center; }
+      .community .inner .pagination::after {
+        content: '';
+        display: block;
+        clear: both; }
+      .community .inner .pagination .numbers {
+        display: inline-block;
+        text-align: center;
+        font-size: 0;
+        margin-bottom: 50px; }
+        .community .inner .pagination .numbers a {
+          display: inline-block;
+          width: 30px;
+          height: 30px;
+          border: 1px solid #888;
+          font: 11px/30px 'Roboto';
+          color: #666;
+          text-align: center;
+          margin: 0 5px;
+          transition: 0.5s; }
+          .community .inner .pagination .numbers a:hover {
+            background: #666;
+            color: #fff; } }
+@media screen and (max-width: 539px) {
+  .community .inner .searchBox {
+    width: 100%;
+    background-color: #f0f0f0;
+    height: 120px;
+    margin-bottom: 50px;
+    text-align: center; }
+    .community .inner .searchBox .SelectCommunity {
+      display: inline-block;
+      width: 100px;
+      height: 35px;
+      background: #555; }
+      .community .inner .searchBox .SelectCommunity a {
+        font: bold 10px/1 'Roboto';
+        text-align: center;
+        line-height: 35px;
+        color: #fff; }
+    .community .inner .searchBox input[type=text] {
+      width: 200px;
+      height: 35px; }
+    .community .inner .searchBox .btnSearch {
+      width: 100px;
+      height: 35px; }
+  .community .inner table th:nth-of-type(1) {
+    width: 0%;
+    display: none; }
+  .community .inner table th:nth-of-type(3) {
+    width: 27%; }
+  .community .inner table td {
+    font-size: 13px; }
+    .community .inner table td:nth-of-type(1) {
+      width: 0%;
+      display: none; }
+  .community .inner .pagination .numbers {
+    display: none; } }
 .join .sub_visual {
   width: 100%;
   height: 250px;
@@ -411,173 +588,582 @@
         margin: 0 auto;
         width: 150px;
         margin-bottom: -77px; }
-  .join .inner #terms {
-    display: inline-block;
-    width: 80%;
-    height: 150px;
-    resize: none;
-    padding: 20px;
-    background-color: #f0f0f0;
-    font: 12px/1.3 "arial";
-    color: #888;
-    margin-bottom: 10px;
-    margin-top: 100px; }
-  .join .inner .agreement {
-    margin-bottom: 70px; }
-    .join .inner .agreement label[for="agree"] {
-      font-family: "Roboto";
-      font-size: 15px;
-      color: #555; }
-  .join .inner ul {
-    text-align: center; }
-    .join .inner ul .name {
-      display: inline-block;
-      width: 40%;
-      height: 100px;
-      background: #fff;
-      margin-bottom: 10px;
-      padding-right: 1%; }
-      .join .inner ul .name h3 {
-        font: bold 22px/1 "Roboto";
-        text-align: left;
-        margin-bottom: 5px;
-        color: #555; }
-      .join .inner ul .name input[type=text] {
-        width: 100%;
-        height: 60px;
-        border: 1px solid #bbb;
-        background: #f0f0f0;
-        padding-left: 20px; }
-    .join .inner ul .email {
-      margin: 0 auto;
-      width: 80.5%;
-      height: 100px;
-      background: #fff;
-      margin-bottom: 10px; }
-      .join .inner ul .email h3 {
-        font: bold 22px/1 "Roboto";
-        text-align: left;
-        margin-bottom: 5px;
-        color: #555; }
-      .join .inner ul .email input[type=text] {
-        transform: translateX(-7px);
-        width: 65%;
-        height: 60px;
-        border: 1px solid #bbb;
-        background: #f0f0f0;
-        padding-left: 20px; }
-      .join .inner ul .email select {
-        transform: translateX(-6px);
-        width: 33%;
-        height: 60px;
-        border: 1px solid #bbb;
-        background: #f0f0f0;
-        padding-left: 20px; }
-    .join .inner ul .id {
-      display: inline-block;
-      width: 40%;
-      height: 100px;
-      background: #fff;
-      margin-bottom: 10px;
-      padding-right: 1%; }
-      .join .inner ul .id h3 {
-        font: bold 22px/1 "Roboto";
-        text-align: left;
-        margin-bottom: 5px;
-        color: #555; }
-      .join .inner ul .id input[type=text] {
-        width: 100%;
-        height: 60px;
-        border: 1px solid #bbb;
-        background: #f0f0f0;
-        padding-left: 20px; }
-    .join .inner ul .password {
-      display: inline-block;
-      width: 40%;
-      height: 100px;
-      background: #fff;
-      margin-bottom: 10px;
-      padding-right: 1%; }
-      .join .inner ul .password h3 {
-        font: bold 22px/1 "Roboto";
-        text-align: left;
-        margin-bottom: 5px;
-        color: #555; }
-      .join .inner ul .password input[type=password] {
-        width: 100%;
-        height: 60px;
-        border: 1px solid #bbb;
-        background: #f0f0f0;
-        padding-left: 20px; }
-    .join .inner ul .aim {
-      display: inline-block;
-      width: 40%;
-      height: 100px;
-      background: #fff;
-      margin-bottom: 10px;
-      padding-right: 1%; }
-      .join .inner ul .aim h3 {
-        font: bold 22px/1 "Roboto";
-        text-align: left;
-        margin-bottom: 5px;
-        color: #555; }
-      .join .inner ul .aim p {
-        display: inline-block;
-        font: bold 20px/1 "Roboto";
-        line-height: 50px;
-        margin-right: 12px; }
-    .join .inner ul .interest {
-      display: inline-block;
-      width: 40%;
-      height: 100px;
-      background: #fff;
-      margin-bottom: 10px;
-      padding-right: 1%; }
-      .join .inner ul .interest h3 {
-        font: bold 22px/1 "Roboto";
-        text-align: left;
-        margin-bottom: 5px;
-        color: #555; }
-      .join .inner ul .interest p {
-        display: inline-block;
-        font: bold 20px/1 "Roboto";
-        line-height: 50px;
-        margin-right: 12px;
-        margin-left: 10px; }
-    .join .inner ul .start {
-      display: inline-block;
+  .join .inner form {
+    width: 100%; }
+    .join .inner form fieldset {
       width: 100%;
-      height: 150px;
-      background-color: #f0f0f0;
-      padding-top: 2.5%; }
-      .join .inner ul .start p {
-        background-color: none;
+      border: 2px solid #999; }
+      .join .inner form fieldset #terms {
         display: inline-block;
-        width: 35%;
-        font: bold 15px/1.2 "Roboto";
-        color: #555; }
-        .join .inner ul .start p a {
-          color: #333;
-          border-bottom: 2px solid #555; }
-      .join .inner ul .start .Engine_Start {
-        cursor: pointer;
-        background-color: lightcoral;
-        background-color: #e60000;
-        border-radius: 10px;
-        display: inline-block;
-        width: 30%; }
-        .join .inner ul .start .Engine_Start .Join_Btn {
-          width: 150px;
+        width: 80%;
+        height: 150px;
+        resize: none;
+        padding: 20px;
+        background-color: #f0f0f0;
+        font: 12px/1.3 "arial";
+        color: #888;
+        margin-bottom: 10px;
+        margin-top: 100px; }
+      .join .inner form fieldset .agreement {
+        margin-bottom: 70px; }
+        .join .inner form fieldset .agreement label[for="agree"] {
+          font-family: "Roboto";
+          font-size: 15px;
+          color: #555; }
+      .join .inner form fieldset ul {
+        text-align: center; }
+        .join .inner form fieldset ul .name {
+          display: inline-block;
+          width: 40%;
           height: 100px;
-          margin: 0 auto; }
-          .join .inner ul .start .Engine_Start .Join_Btn a {
-            font: bold 25px/1 "Roboto";
-            color: #fff;
-            line-height: 100px; }
+          background: #fff;
+          margin-bottom: 10px;
+          padding-right: 1%; }
+          .join .inner form fieldset ul .name h3 {
+            font: bold 22px/1 "Roboto";
+            text-align: left;
+            margin-bottom: 5px;
+            color: #555; }
+          .join .inner form fieldset ul .name input[type=text] {
+            width: 100%;
+            height: 60px;
+            border: 1px solid #bbb;
+            background: #f0f0f0;
+            padding-left: 20px; }
+        .join .inner form fieldset ul .email {
+          margin: 0 auto;
+          width: 80.5%;
+          height: 100px;
+          background: #fff;
+          margin-bottom: 10px; }
+          .join .inner form fieldset ul .email h3 {
+            font: bold 22px/1 "Roboto";
+            text-align: left;
+            margin-bottom: 5px;
+            color: #555; }
+          .join .inner form fieldset ul .email input[type=text] {
+            transform: translateX(-7px);
+            width: 65%;
+            height: 60px;
+            border: 1px solid #bbb;
+            background: #f0f0f0;
+            padding-left: 20px; }
+          .join .inner form fieldset ul .email select {
+            transform: translateX(-6px);
+            width: 33%;
+            height: 60px;
+            border: 1px solid #bbb;
+            background: #f0f0f0;
+            padding-left: 20px; }
+        .join .inner form fieldset ul .id {
+          display: inline-block;
+          width: 40%;
+          height: 100px;
+          background: #fff;
+          margin-bottom: 10px;
+          padding-right: 1%; }
+          .join .inner form fieldset ul .id h3 {
+            font: bold 22px/1 "Roboto";
+            text-align: left;
+            margin-bottom: 5px;
+            color: #555; }
+          .join .inner form fieldset ul .id input[type=text] {
+            width: 100%;
+            height: 60px;
+            border: 1px solid #bbb;
+            background: #f0f0f0;
+            padding-left: 20px; }
+        .join .inner form fieldset ul .password {
+          display: inline-block;
+          width: 40%;
+          height: 100px;
+          background: #fff;
+          margin-bottom: 10px;
+          padding-right: 1%; }
+          .join .inner form fieldset ul .password h3 {
+            font: bold 22px/1 "Roboto";
+            text-align: left;
+            margin-bottom: 5px;
+            color: #555; }
+          .join .inner form fieldset ul .password input[type=password] {
+            width: 100%;
+            height: 60px;
+            border: 1px solid #bbb;
+            background: #f0f0f0;
+            padding-left: 20px; }
+        .join .inner form fieldset ul .aim {
+          display: inline-block;
+          width: 40%;
+          height: 100px;
+          background: #fff;
+          margin-bottom: 10px;
+          padding-right: 1%; }
+          .join .inner form fieldset ul .aim h3 {
+            font: bold 22px/1 "Roboto";
+            text-align: left;
+            margin-bottom: 5px;
+            color: #555; }
+          .join .inner form fieldset ul .aim p {
+            display: inline-block;
+            font: bold 20px/1 "Roboto";
+            line-height: 50px;
+            margin-right: 12px; }
+        .join .inner form fieldset ul .interest {
+          display: inline-block;
+          width: 40%;
+          height: 100px;
+          background: #fff;
+          margin-bottom: 10px;
+          padding-right: 1%; }
+          .join .inner form fieldset ul .interest h3 {
+            font: bold 22px/1 "Roboto";
+            text-align: left;
+            margin-bottom: 5px;
+            color: #555; }
+          .join .inner form fieldset ul .interest p {
+            display: inline-block;
+            font: bold 20px/1 "Roboto";
+            line-height: 50px;
+            margin-right: 12px;
+            margin-left: 10px; }
+        .join .inner form fieldset ul .start {
+          display: inline-block;
+          width: 100%;
+          height: 150px;
+          background-color: #f0f0f0;
+          padding-top: 2.5%; }
+          .join .inner form fieldset ul .start p {
+            background-color: none;
+            display: inline-block;
+            width: 35%;
+            font: bold 15px/1.2 "Roboto";
+            color: #555; }
+            .join .inner form fieldset ul .start p a {
+              color: #333;
+              border-bottom: 2px solid #555; }
+          .join .inner form fieldset ul .start .Engine_Start {
+            cursor: pointer;
+            background-color: #e60000;
+            border-radius: 10px;
+            display: inline-block;
+            width: 30%;
+            transition: 0.5s; }
+            .join .inner form fieldset ul .start .Engine_Start .Join_Btn {
+              width: 150px;
+              height: 100px;
+              margin: 0 auto; }
+              .join .inner form fieldset ul .start .Engine_Start .Join_Btn a {
+                font: bold 25px/1 "Roboto";
+                color: #fff;
+                line-height: 100px; }
+            .join .inner form fieldset ul .start .Engine_Start:hover {
+              background-color: #fff;
+              transition: 0.5s;
+              box-shadow: 0 0 0 3px lightgreen inset;
+              box-sizing: border-box; }
+              .join .inner form fieldset ul .start .Engine_Start:hover .Join_Btn a {
+                color: #e60000; }
 .join .footerTop {
   margin-top: 100px;
   border-bottom: 2px solid #f0f0f0; }
 
+@media screen and (max-width: 1179px) {
+  .join .inner {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    .join .inner .team {
+      padding-top: 50px;
+      margin: 0 auto; }
+      .join .inner .team > h1 {
+        text-align: center;
+        font: bold 70px/1 "Roboto";
+        color: #555;
+        margin-bottom: 30px; }
+        .join .inner .team > h1 img {
+          display: block;
+          margin: 0 auto;
+          width: 150px;
+          margin-bottom: -77px; }
+    .join .inner form {
+      width: 100%; }
+      .join .inner form fieldset {
+        width: 100%;
+        border: 2px solid #999; }
+        .join .inner form fieldset #terms {
+          display: inline-block;
+          width: 80%;
+          height: 150px;
+          resize: none;
+          padding: 20px;
+          background-color: #f0f0f0;
+          font: 12px/1.3 "arial";
+          color: #888;
+          margin-bottom: 10px;
+          margin-top: 100px; }
+        .join .inner form fieldset .agreement {
+          margin-bottom: 70px; }
+          .join .inner form fieldset .agreement label[for="agree"] {
+            font-family: "Roboto";
+            font-size: 15px;
+            color: #555; }
+        .join .inner form fieldset ul {
+          text-align: center; }
+          .join .inner form fieldset ul .name {
+            display: inline-block;
+            width: 40%;
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px;
+            padding-right: 1%; }
+            .join .inner form fieldset ul .name h3 {
+              font: bold 22px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .name input[type=text] {
+              width: 100%;
+              height: 60px;
+              border: 1px solid #bbb;
+              background: #f0f0f0;
+              padding-left: 20px; }
+          .join .inner form fieldset ul .email {
+            margin: 0 auto;
+            width: 80.5%;
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px; }
+            .join .inner form fieldset ul .email h3 {
+              font: bold 22px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .email input[type=text] {
+              transform: translateX(-7px);
+              width: 65%;
+              height: 60px;
+              border: 1px solid #bbb;
+              background: #f0f0f0;
+              padding-left: 20px; }
+            .join .inner form fieldset ul .email select {
+              transform: translateX(-6px);
+              width: 33%;
+              height: 60px;
+              border: 1px solid #bbb;
+              background: #f0f0f0;
+              padding-left: 20px; }
+          .join .inner form fieldset ul .id {
+            display: inline-block;
+            width: 40%;
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px;
+            padding-right: 1%; }
+            .join .inner form fieldset ul .id h3 {
+              font: bold 22px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .id input[type=text] {
+              width: 100%;
+              height: 60px;
+              border: 1px solid #bbb;
+              background: #f0f0f0;
+              padding-left: 20px; }
+          .join .inner form fieldset ul .password {
+            display: inline-block;
+            width: 40%;
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px;
+            padding-right: 1%; }
+            .join .inner form fieldset ul .password h3 {
+              font: bold 22px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .password input[type=password] {
+              width: 100%;
+              height: 60px;
+              border: 1px solid #bbb;
+              background: #f0f0f0;
+              padding-left: 20px; }
+          .join .inner form fieldset ul .aim {
+            display: inline-block;
+            width: 40%;
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px;
+            padding-right: 1%; }
+            .join .inner form fieldset ul .aim h3 {
+              font: bold 22px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .aim p {
+              display: inline-block;
+              font: bold 20px/1 "Roboto";
+              line-height: 50px;
+              margin-right: 12px; }
+          .join .inner form fieldset ul .interest {
+            display: inline-block;
+            width: 40%;
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px;
+            padding-right: 1%; }
+            .join .inner form fieldset ul .interest h3 {
+              font: bold 22px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .interest p {
+              display: inline-block;
+              font: bold 20px/1 "Roboto";
+              line-height: 50px;
+              margin-right: 12px;
+              margin-left: 10px; }
+          .join .inner form fieldset ul .start {
+            display: inline-block;
+            width: 100%;
+            height: 150px;
+            background-color: #f0f0f0;
+            padding-top: 2.5%; }
+            .join .inner form fieldset ul .start p {
+              background-color: none;
+              display: inline-block;
+              width: 35%;
+              font: bold 15px/1.2 "Roboto";
+              color: #555; }
+              .join .inner form fieldset ul .start p a {
+                color: #333;
+                border-bottom: 2px solid #555; }
+            .join .inner form fieldset ul .start .Engine_Start {
+              cursor: pointer;
+              background-color: #e60000;
+              border-radius: 10px;
+              display: inline-block;
+              width: 30%;
+              transition: 0.5s; }
+              .join .inner form fieldset ul .start .Engine_Start .Join_Btn {
+                width: 150px;
+                height: 100px;
+                margin: 0 auto; }
+                .join .inner form fieldset ul .start .Engine_Start .Join_Btn a {
+                  font: bold 25px/1 "Roboto";
+                  color: #fff;
+                  line-height: 100px; }
+              .join .inner form fieldset ul .start .Engine_Start:hover {
+                background-color: #fff;
+                transition: 0.5s;
+                box-shadow: 0 0 0 3px lightgreen inset;
+                box-sizing: border-box; }
+                .join .inner form fieldset ul .start .Engine_Start:hover .Join_Btn a {
+                  color: #e60000; }
+  .join .footerTop {
+    margin-top: 100px;
+    border-bottom: 2px solid #f0f0f0; } }
+@media screen and (max-width: 539px) {
+  .join .inner {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center; }
+    .join .inner .team {
+      padding-top: 50px;
+      margin: 0 auto; }
+      .join .inner .team > h1 {
+        text-align: center;
+        font: bold 50px/1 "Roboto";
+        color: #555;
+        margin-bottom: 30px; }
+        .join .inner .team > h1 img {
+          display: block;
+          margin: 0 auto;
+          width: 120px;
+          margin-bottom: -50px; }
+    .join .inner form {
+      width: 100%; }
+      .join .inner form fieldset {
+        width: 100%;
+        border: none; }
+        .join .inner form fieldset #terms {
+          display: inline-block;
+          width: 80%;
+          height: 150px;
+          resize: none;
+          padding: 20px;
+          background-color: #f0f0f0;
+          font: 12px/1.3 "arial";
+          color: #888;
+          margin-bottom: 10px;
+          margin-top: 100px; }
+        .join .inner form fieldset .agreement {
+          margin-bottom: 70px; }
+          .join .inner form fieldset .agreement label[for="agree"] {
+            font-family: "Roboto";
+            font-size: 15px;
+            color: #555; }
+        .join .inner form fieldset ul {
+          text-align: center; }
+          .join .inner form fieldset ul .name {
+            display: inline-block;
+            width: 80%;
+            height: 70px;
+            background: #fff;
+            margin-bottom: 10px;
+            padding-right: 1%; }
+            .join .inner form fieldset ul .name h3 {
+              font: bold 18px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .name input[type=text] {
+              width: 100%;
+              height: 40px;
+              border: 1px solid #bbb;
+              background: #f0f0f0;
+              padding-left: 20px; }
+          .join .inner form fieldset ul .email {
+            margin: 0 auto;
+            width: 80.5%;
+            height: 70px;
+            background: #fff;
+            margin-bottom: 10px; }
+            .join .inner form fieldset ul .email h3 {
+              font: bold 18px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .email input[type=text] {
+              transform: translateX(-6px);
+              width: 62%;
+              height: 40px;
+              border: 1px solid #bbb;
+              background: #f0f0f0;
+              padding-left: 20px; }
+            .join .inner form fieldset ul .email select {
+              transform: translateX(1px);
+              width: 33%;
+              height: 40px;
+              border: 1px solid #bbb;
+              background: #f0f0f0;
+              padding-left: 10px; }
+          .join .inner form fieldset ul .id {
+            display: inline-block;
+            width: 80%;
+            height: 70px;
+            background: #fff;
+            margin-bottom: 10px;
+            padding-right: 1%; }
+            .join .inner form fieldset ul .id h3 {
+              font: bold 18px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .id input[type=text] {
+              width: 100%;
+              height: 40px;
+              border: 1px solid #bbb;
+              background: #f0f0f0;
+              padding-left: 20px; }
+          .join .inner form fieldset ul .password {
+            display: inline-block;
+            width: 80%;
+            height: 70px;
+            background: #fff;
+            margin-bottom: 10px;
+            padding-right: 1%; }
+            .join .inner form fieldset ul .password h3 {
+              font: bold 18px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .password input[type=password] {
+              width: 100%;
+              height: 40px;
+              border: 1px solid #bbb;
+              background: #f0f0f0;
+              padding-left: 20px; }
+          .join .inner form fieldset ul .aim {
+            display: none;
+            display: inline-block;
+            width: 40%;
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px;
+            padding-right: 1%; }
+            .join .inner form fieldset ul .aim h3 {
+              font: bold 18px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .aim p {
+              display: block;
+              font: bold 20px/1 "Roboto";
+              line-height: 50px;
+              margin-right: 12px; }
+          .join .inner form fieldset ul .interest {
+            display: none;
+            display: inline-block;
+            width: 40%;
+            height: 100px;
+            background: #fff;
+            margin-bottom: 10px;
+            padding-right: 1%; }
+            .join .inner form fieldset ul .interest h3 {
+              font: bold 18px/1 "Roboto";
+              text-align: left;
+              margin-bottom: 5px;
+              color: #555; }
+            .join .inner form fieldset ul .interest p {
+              display: block;
+              font: bold 20px/1 "Roboto";
+              line-height: 50px;
+              margin-right: 12px;
+              margin-left: 10px; }
+          .join .inner form fieldset ul .start {
+            display: inline-block;
+            width: 100%;
+            height: 100%;
+            background-color: #f0f0f0;
+            padding-top: 2.5%; }
+            .join .inner form fieldset ul .start p {
+              background-color: none;
+              display: inline-block;
+              width: 80%;
+              font: bold 15px/1.2 "Roboto";
+              color: #555;
+              padding-top: 15px;
+              padding-bottom: 30px; }
+              .join .inner form fieldset ul .start p a {
+                color: #333;
+                border-bottom: 2px solid #555; }
+            .join .inner form fieldset ul .start .Engine_Start {
+              cursor: pointer;
+              background-color: #e60000;
+              border-radius: 10px;
+              display: inline-block;
+              width: 60%;
+              transition: 0.5s;
+              margin-bottom: 30px; }
+              .join .inner form fieldset ul .start .Engine_Start .Join_Btn {
+                width: 150px;
+                height: 80px;
+                margin: 0 auto; }
+                .join .inner form fieldset ul .start .Engine_Start .Join_Btn a {
+                  font: bold 20px/1 "Roboto";
+                  color: #fff;
+                  line-height: 80px; }
+              .join .inner form fieldset ul .start .Engine_Start:hover {
+                background-color: #fff;
+                transition: 0.5s;
+                box-shadow: 0 0 0 3px lightgreen inset;
+                box-sizing: border-box; }
+                .join .inner form fieldset ul .start .Engine_Start:hover .Join_Btn a {
+                  color: #e60000; }
+  .join .footerTop {
+    margin-top: 100px;
+    border-bottom: 2px solid #f0f0f0; } }
 * {
   margin: 0;
   padding: 0;
@@ -588,11 +1174,6 @@ ul, ol, li {
 
 a {
   text-decoration: none; }
-
-.wrap::after {
-  content: '';
-  display: block;
-  clear: both; }
 
 .tips::after {
   content: '';
@@ -833,6 +1414,10 @@ a {
     #see .inner .wrap {
       width: 100%;
       background-color: #f0f0f0; }
+      #see .inner .wrap::after {
+        content: '';
+        display: block;
+        clear: both; }
       #see .inner .wrap article {
         width: 370px;
         height: 450px;
@@ -1085,6 +1670,7 @@ a {
         #footer .inner article:nth-of-type(5) li {
           float: left; }
           #footer .inner article:nth-of-type(5) li i {
+            cursor: pointer;
             font-size: 35px;
             color: #c5c5c5;
             padding-left: 30px; }
@@ -1547,7 +2133,7 @@ a {
     background-color: #f0f0f0;
     padding-bottom: 10px; }
     #see .inner {
-      width: 1180px;
+      width: 100%;
       margin: 0 auto;
       background-color: #f0f0f0; }
       #see .inner h1 {
@@ -1556,11 +2142,12 @@ a {
         display: none; }
       #see .inner .wrap {
         width: 100vw;
-        background-color: #f0f0f0; }
+        background-color: #f0f0f0;
+        text-align: center; }
         #see .inner .wrap article {
+          display: inline-block;
           width: 90%;
           height: 30%;
-          float: left;
           background-color: #fff;
           margin-right: 2%;
           padding-top: 50px;

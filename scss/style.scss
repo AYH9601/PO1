@@ -9,7 +9,6 @@
 * {margin: 0; padding: 0; box-sizing: border-box;}
 ul,ol,li {list-style: none;}
 a {text-decoration: none;}
-.wrap::after{content:''; display:block; clear:both;}
 .tips::after{content:''; display:block; clear:both;}
 
 #header {
@@ -354,7 +353,7 @@ a {text-decoration: none;}
             width: 100%;
             background-color: rgb(240, 240, 240);
 
-            
+            &::after{content:''; display:block; clear:both;}
 
             article { 
                 width: 370px;
@@ -716,6 +715,7 @@ a {text-decoration: none;}
                     float: left;
 
                     i {
+                        cursor: pointer;
                         font-size: 35px;
                         color: rgb(197, 197, 197);
                         padding-left: 30px;
@@ -1387,7 +1387,7 @@ a {text-decoration: none;}
     
     
         .inner {
-            width: 1180px;
+            width: 100%;
             margin: 0 auto;
             background-color: rgb(240, 240, 240);
     
@@ -1402,11 +1402,13 @@ a {text-decoration: none;}
             .wrap {
                 width: 100vw;
                 background-color: rgb(240, 240, 240);
+                text-align: center;
 
                 article { 
+                    display: inline-block;
                     width: 90%;
                     height: 30%;
-                    float: left;
+                    
                     background-color: #fff;
                     margin-right:2%;
                     padding-top: 50px;

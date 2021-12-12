@@ -36,224 +36,243 @@
             }
         }
 
-        #terms{
+        form {
+            width: 100%;
 
-            display: inline-block;
-            width:80%; 
-            height:150px; 
-            resize:none; 
-            padding:20px; 
-            background-color:rgb(240, 240, 240); 
-            font:12px/1.3 "arial"; 
-            color:#888; 
-            margin-bottom:10px; 
-            margin-top: 100px;
-        }
-
-        .agreement{
-            margin-bottom:70px; 
-
-            label[for="agree"]{
-                font-family: "Roboto";
-                font-size:15px; 
-                color: #555;
-            }
-        }
-
-
-        ul {
-            text-align: center;
-
-            .name {
-                h3 {
-                    font: bold 22px/1 "Roboto";
-                    text-align: left;
-                    margin-bottom: 5px;
-                    color: #555;
-                }
-
-                display: inline-block;
-                width: 40%;
-                height: 100px;
-                background: #fff;
-                margin-bottom: 10px;
-                padding-right: 1%;
-
-                input[type=text] {
-                    width:100%; 
-                    height:60px; 
-                    border:1px solid #bbb; 
-                    background:rgb(240, 240, 240); 
-                    padding-left:20px; 
-                }
-            }
-
-            .email {
-                h3 {
-                    font: bold 22px/1 "Roboto";
-                    text-align: left;
-                    margin-bottom: 5px;
-                    color: #555;
-                }
-                margin: 0 auto;
-                width: 80.5%;
-                height: 100px;
-                background: #fff;
-                margin-bottom: 10px;
-
-                input[type=text] {
-                    transform: translateX(-7px);
-                    width:65%; 
-                    height:60px; 
-                    border:1px solid #bbb; 
-                    background:rgb(240, 240, 240); 
-                    padding-left:20px; 
-                }
-
-                select {
-                    transform: translateX(-6px);
-                    width:33%; 
-                    height:60px; 
-                    border:1px solid #bbb; 
-                    background:rgb(240, 240, 240); 
-                    padding-left:20px; 
-                }
-            }
-
-            .id {
-                h3 {
-                    font: bold 22px/1 "Roboto";
-                    text-align: left;
-                    margin-bottom: 5px;
-                    color: #555;
-                }
-                display: inline-block;
-                width: 40%;
-                height: 100px;
-                background: #fff;
-                margin-bottom: 10px;
-                padding-right: 1%;
-
-                input[type=text] {
-                    width:100%; 
-                    height:60px; 
-                    border:1px solid #bbb; 
-                    background:rgb(240, 240, 240); 
-                    padding-left:20px; 
-                }
-            }
-
-            .password {
-                h3 {
-                    font: bold 22px/1 "Roboto";
-                    text-align: left;
-                    margin-bottom: 5px;
-                    color: #555;
-                }
-                display: inline-block;
-                width: 40%;
-                height: 100px;
-                background: #fff;
-                margin-bottom: 10px;
-                padding-right: 1%;
-
-                input[type=password] {
-                    width:100%; 
-                    height:60px; 
-                    border:1px solid #bbb; 
-                    background:rgb(240, 240, 240); 
-                    padding-left:20px; 
-                }
-            }
-
-            .aim {
-                h3 {
-                    font: bold 22px/1 "Roboto";
-                    text-align: left;
-                    margin-bottom: 5px;
-                    color: #555;
-                }
-                display: inline-block;
-                width: 40%;
-                height: 100px;
-                background: #fff;
-                margin-bottom: 10px;
-                padding-right: 1%;
-
-                // input[type=radio] {
-                    
-                // }
-
-                p {
-                    display: inline-block;
-                    font: bold 20px/1 "Roboto";
-                    line-height: 50px; 
-                    margin-right: 12px;
-                }
-            }
-
-            .interest {
-                h3 {
-                    font: bold 22px/1 "Roboto";
-                    text-align: left;
-                    margin-bottom: 5px;
-                    color: #555;
-                }
-                display: inline-block;
-                width: 40%;
-                height: 100px;
-                background: #fff;
-                margin-bottom: 10px;
-                padding-right: 1%;
-
-                p {
-                    display: inline-block;
-                    font: bold 20px/1 "Roboto";
-                    line-height: 50px; 
-                    margin-right: 12px;
-                    margin-left: 10px;
-                }
-            }
-
-            .start {
-                display: inline-block;
+            fieldset {
                 width: 100%;
-                height: 150px;
-                background-color: rgb(240, 240, 240);
-                padding-top: 2.5%;
-                
-                p {
-                    background-color: none;
-                    display: inline-block;
-                    width: 35%;
-                    font: bold 15px/1.2 "Roboto";
-                    color: #555;
+                border: 2px solid #999;
 
-                    a {
-                        color: #333;
-                        border-bottom: 2px solid #555;
+                #terms{
+                    display: inline-block;
+                    width:80%; 
+                    height:150px; 
+                    resize:none; 
+                    padding:20px; 
+                    background-color:rgb(240, 240, 240); 
+                    font:12px/1.3 "arial"; 
+                    color:#888; 
+                    margin-bottom:10px; 
+                    margin-top: 100px;
+                }
+        
+                .agreement{
+                    margin-bottom:70px; 
+        
+                    label[for="agree"]{
+                        font-family: "Roboto";
+                        font-size:15px; 
+                        color: #555;
                     }
                 }
-
-                .Engine_Start {
-                    cursor: pointer;
-                    background-color: lightcoral;
-                    background-color: rgb(230, 0, 0);
-                    border-radius: 10px;
-                    display: inline-block;
-                    // transform: translateY(-55px);
-                    width: 30%;
-
-                    .Join_Btn {
-                        
-                        width: 150px;
+        
+        
+                ul {
+                    text-align: center;
+        
+                    .name {
+                        h3 {
+                            font: bold 22px/1 "Roboto";
+                            text-align: left;
+                            margin-bottom: 5px;
+                            color: #555;
+                        }
+        
+                        display: inline-block;
+                        width: 40%;
                         height: 100px;
+                        background: #fff;
+                        margin-bottom: 10px;
+                        padding-right: 1%;
+        
+                        input[type=text] {
+                            width:100%; 
+                            height:60px; 
+                            border:1px solid #bbb; 
+                            background:rgb(240, 240, 240); 
+                            padding-left:20px; 
+                        }
+                    }
+        
+                    .email {
+                        h3 {
+                            font: bold 22px/1 "Roboto";
+                            text-align: left;
+                            margin-bottom: 5px;
+                            color: #555;
+                        }
                         margin: 0 auto;
+                        width: 80.5%;
+                        height: 100px;
+                        background: #fff;
+                        margin-bottom: 10px;
+        
+                        input[type=text] {
+                            transform: translateX(-7px);
+                            width:65%; 
+                            height:60px; 
+                            border:1px solid #bbb; 
+                            background:rgb(240, 240, 240); 
+                            padding-left:20px; 
+                        }
+        
+                        select {
+                            transform: translateX(-6px);
+                            width:33%; 
+                            height:60px; 
+                            border:1px solid #bbb; 
+                            background:rgb(240, 240, 240); 
+                            padding-left:20px; 
+                        }
+                    }
+        
+                    .id {
+                        h3 {
+                            font: bold 22px/1 "Roboto";
+                            text-align: left;
+                            margin-bottom: 5px;
+                            color: #555;
+                        }
+                        display: inline-block;
+                        width: 40%;
+                        height: 100px;
+                        background: #fff;
+                        margin-bottom: 10px;
+                        padding-right: 1%;
+        
+                        input[type=text] {
+                            width:100%; 
+                            height:60px; 
+                            border:1px solid #bbb; 
+                            background:rgb(240, 240, 240); 
+                            padding-left:20px; 
+                        }
+                    }
+        
+                    .password {
+                        h3 {
+                            font: bold 22px/1 "Roboto";
+                            text-align: left;
+                            margin-bottom: 5px;
+                            color: #555;
+                        }
+                        display: inline-block;
+                        width: 40%;
+                        height: 100px;
+                        background: #fff;
+                        margin-bottom: 10px;
+                        padding-right: 1%;
+        
+                        input[type=password] {
+                            width:100%; 
+                            height:60px; 
+                            border:1px solid #bbb; 
+                            background:rgb(240, 240, 240); 
+                            padding-left:20px; 
+                        }
+                    }
+        
+                    .aim {
+                        h3 {
+                            font: bold 22px/1 "Roboto";
+                            text-align: left;
+                            margin-bottom: 5px;
+                            color: #555;
+                        }
+                        display: inline-block;
+                        width: 40%;
+                        height: 100px;
+                        background: #fff;
+                        margin-bottom: 10px;
+                        padding-right: 1%;
+        
+                        // input[type=radio] {
+                            
+                        // }
+        
+                        p {
+                            display: inline-block;
+                            font: bold 20px/1 "Roboto";
+                            line-height: 50px; 
+                            margin-right: 12px;
+                        }
+                    }
+        
+                    .interest {
+                        h3 {
+                            font: bold 22px/1 "Roboto";
+                            text-align: left;
+                            margin-bottom: 5px;
+                            color: #555;
+                        }
+                        display: inline-block;
+                        width: 40%;
+                        height: 100px;
+                        background: #fff;
+                        margin-bottom: 10px;
+                        padding-right: 1%;
+        
+                        p {
+                            display: inline-block;
+                            font: bold 20px/1 "Roboto";
+                            line-height: 50px; 
+                            margin-right: 12px;
+                            margin-left: 10px;
+                        }
+                    }
+        
+                    .start {
+                        display: inline-block;
+                        width: 100%;
+                        height: 150px;
+                        background-color: rgb(240, 240, 240);
+                        padding-top: 2.5%;
                         
-                        a {
-                            font: bold 25px/1 "Roboto";
-                            color: #fff;
-                            line-height: 100px;
+                        p {
+                            background-color: none;
+                            display: inline-block;
+                            width: 35%;
+                            font: bold 15px/1.2 "Roboto";
+                            color: #555;
+        
+                            a {
+                                color: #333;
+                                border-bottom: 2px solid #555;
+                            }
+                        }
+        
+                        .Engine_Start {
+                            cursor: pointer;
+                            background-color: rgb(230, 0, 0);
+                            border-radius: 10px;
+                            display: inline-block;
+                            width: 30%;
+                            transition: 0.5s;
+        
+                            .Join_Btn {
+                                
+                                width: 150px;
+                                height: 100px;
+                                margin: 0 auto;
+                                
+                                a {
+                                    font: bold 25px/1 "Roboto";
+                                    color: #fff;
+                                    line-height: 100px;
+                                }
+                            }
+        
+                            &:hover {
+                                background-color: #fff;
+                                transition: 0.5s;
+                                box-shadow: 0 0 0 3px lightgreen inset;
+                                box-sizing: border-box;
+                                .Join_Btn {
+                                    a {
+                                        color: rgb(230, 0, 0);
+                                    }
+                                }
+                            }
                         }
                     }
                 }
@@ -264,5 +283,565 @@
     .footerTop {
         margin-top: 100px;
         border-bottom: 2px solid rgb(240, 240, 240);
+    }
+}
+
+@media screen and (max-width:1179px) {
+    .join {
+    
+        .inner {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            
+            .team {
+                padding-top: 50px;
+                margin: 0 auto;
+    
+                >h1 {
+                    text-align: center;
+    
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        width: 150px;
+                        margin-bottom: -77px;
+                    }
+    
+                    font: bold 70px/1 "Roboto";
+                    color: #555;
+                    margin-bottom: 30px;
+                }
+            }
+    
+            form {
+                width: 100%;
+    
+                fieldset {
+                    width: 100%; //손댐 --------------------------------------------------
+                    border: 2px solid #999;
+    
+                    #terms{
+                        display: inline-block;
+                        width:80%; 
+                        height:150px; 
+                        resize:none; 
+                        padding:20px; 
+                        background-color:rgb(240, 240, 240); 
+                        font:12px/1.3 "arial"; 
+                        color:#888; 
+                        margin-bottom:10px; 
+                        margin-top: 100px;
+                    }
+            
+                    .agreement{
+                        margin-bottom:70px; 
+            
+                        label[for="agree"]{
+                            font-family: "Roboto";
+                            font-size:15px; 
+                            color: #555;
+                        }
+                    }
+            
+            
+                    ul {
+                        text-align: center;
+            
+                        .name {
+                            h3 {
+                                font: bold 22px/1 "Roboto";
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+            
+                            display: inline-block;
+                            width: 40%;
+                            height: 100px;
+                            background: #fff;
+                            margin-bottom: 10px;
+                            padding-right: 1%;
+            
+                            input[type=text] {
+                                width:100%; 
+                                height:60px; 
+                                border:1px solid #bbb; 
+                                background:rgb(240, 240, 240); 
+                                padding-left:20px; 
+                            }
+                        }
+            
+                        .email {
+                            h3 {
+                                font: bold 22px/1 "Roboto";
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+                            margin: 0 auto;
+                            width: 80.5%;
+                            height: 100px;
+                            background: #fff;
+                            margin-bottom: 10px;
+            
+                            input[type=text] {
+                                transform: translateX(-7px);
+                                width:65%; 
+                                height:60px; 
+                                border:1px solid #bbb; 
+                                background:rgb(240, 240, 240); 
+                                padding-left:20px; 
+                            }
+            
+                            select {
+                                transform: translateX(-6px);
+                                width:33%; 
+                                height:60px; 
+                                border:1px solid #bbb; 
+                                background:rgb(240, 240, 240); 
+                                padding-left:20px; 
+                            }
+                        }
+            
+                        .id {
+                            h3 {
+                                font: bold 22px/1 "Roboto";
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+                            display: inline-block;
+                            width: 40%;
+                            height: 100px;
+                            background: #fff;
+                            margin-bottom: 10px;
+                            padding-right: 1%;
+            
+                            input[type=text] {
+                                width:100%; 
+                                height:60px; 
+                                border:1px solid #bbb; 
+                                background:rgb(240, 240, 240); 
+                                padding-left:20px; 
+                            }
+                        }
+            
+                        .password {
+                            h3 {
+                                font: bold 22px/1 "Roboto";
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+                            display: inline-block;
+                            width: 40%;
+                            height: 100px;
+                            background: #fff;
+                            margin-bottom: 10px;
+                            padding-right: 1%;
+            
+                            input[type=password] {
+                                width:100%; 
+                                height:60px; 
+                                border:1px solid #bbb; 
+                                background:rgb(240, 240, 240); 
+                                padding-left:20px; 
+                            }
+                        }
+            
+                        .aim {
+                            h3 {
+                                font: bold 22px/1 "Roboto";
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+                            display: inline-block;
+                            width: 40%;
+                            height: 100px;
+                            background: #fff;
+                            margin-bottom: 10px;
+                            padding-right: 1%;
+            
+                            // input[type=radio] {
+                                
+                            // }
+            
+                            p {
+                                display: inline-block;
+                                font: bold 20px/1 "Roboto";
+                                line-height: 50px; 
+                                margin-right: 12px;
+                            }
+                        }
+            
+                        .interest {
+                            h3 {
+                                font: bold 22px/1 "Roboto";
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+                            display: inline-block;
+                            width: 40%;
+                            height: 100px;
+                            background: #fff;
+                            margin-bottom: 10px;
+                            padding-right: 1%;
+            
+                            p {
+                                display: inline-block;
+                                font: bold 20px/1 "Roboto";
+                                line-height: 50px; 
+                                margin-right: 12px;
+                                margin-left: 10px;
+                            }
+                        }
+            
+                        .start {
+                            display: inline-block;
+                            width: 100%;
+                            height: 150px;
+                            background-color: rgb(240, 240, 240);
+                            padding-top: 2.5%;
+                            
+                            p {
+                                background-color: none;
+                                display: inline-block;
+                                width: 35%;
+                                font: bold 15px/1.2 "Roboto";
+                                color: #555;
+            
+                                a {
+                                    color: #333;
+                                    border-bottom: 2px solid #555;
+                                }
+                            }
+            
+                            .Engine_Start {
+                                cursor: pointer;
+                                background-color: rgb(230, 0, 0);
+                                border-radius: 10px;
+                                display: inline-block;
+                                width: 30%;
+                                transition: 0.5s;
+            
+                                .Join_Btn {
+                                    
+                                    width: 150px;
+                                    height: 100px;
+                                    margin: 0 auto;
+                                    
+                                    a {
+                                        font: bold 25px/1 "Roboto";
+                                        color: #fff;
+                                        line-height: 100px;
+                                    }
+                                }
+            
+                                &:hover {
+                                    background-color: #fff;
+                                    transition: 0.5s;
+                                    box-shadow: 0 0 0 3px lightgreen inset;
+                                    box-sizing: border-box;
+                                    .Join_Btn {
+                                        a {
+                                            color: rgb(230, 0, 0);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .footerTop {
+            margin-top: 100px;
+            border-bottom: 2px solid rgb(240, 240, 240);
+        }
+    }
+}
+
+@media screen and (max-width:539px) {
+
+    .join {
+        .inner {
+            width: 100%;
+            margin: 0 auto;
+            text-align: center;
+            
+            .team {
+                padding-top: 50px;
+                margin: 0 auto;
+    
+                >h1 {
+                    text-align: center;
+    
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        width: 120px; //////////////
+                        margin-bottom: -50px;
+                    }
+    
+                    font: bold 50px/1 "Roboto"; ////////////
+                    color: #555;
+                    margin-bottom: 30px;
+                }
+            }
+    
+            form {
+                width: 100%;
+    
+                fieldset {
+                    width: 100%; //손댐 --------------------------------------------------
+                    border: none;
+    
+                    #terms{
+                        display: inline-block;
+                        width:80%; 
+                        height:150px; 
+                        resize:none; 
+                        padding:20px; 
+                        background-color:rgb(240, 240, 240); 
+                        font:12px/1.3 "arial"; 
+                        color:#888; 
+                        margin-bottom:10px; 
+                        margin-top: 100px;
+                    }
+            
+                    .agreement{
+                        margin-bottom:70px; 
+            
+                        label[for="agree"]{
+                            font-family: "Roboto";
+                            font-size:15px; 
+                            color: #555;
+                        }
+                    }
+            
+            
+                    ul {
+                        text-align: center;
+            
+                        .name {
+                            h3 {
+                                font: bold 18px/1 "Roboto"; ///////////////
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+            
+                            display: inline-block;
+                            width: 80%; ///////////////////
+                            height: 70px; /////////////////////////////
+                            background: #fff;
+                            margin-bottom: 10px;
+                            padding-right: 1%;
+            
+                            input[type=text] {
+                                width:100%; 
+                                height:40px; ////////////////////
+                                border:1px solid #bbb; 
+                                background:rgb(240, 240, 240); 
+                                padding-left:20px; 
+                            }
+                        }
+            
+                        .email {
+                            h3 {
+                                font: bold 18px/1 "Roboto"; /////////////
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+                            margin: 0 auto;
+                            width: 80.5%;
+                            height: 70px; ///////////////////
+                            background: #fff;
+                            margin-bottom: 10px;
+            
+                            input[type=text] {
+                                transform: translateX(-6px); //////////////
+                                width:62%; ////////////// 
+                                height:40px; //////////////////
+                                border:1px solid #bbb; 
+                                background:rgb(240, 240, 240); 
+                                padding-left:20px; 
+                            }
+            
+                            select {
+                                transform: translateX(1px); ///////////
+                                width:33%; 
+                                height:40px; //////////////////////////////
+                                border:1px solid #bbb; 
+                                background:rgb(240, 240, 240); 
+                                padding-left:10px; //////////////////////
+                            }
+                        }
+            
+                        .id {
+                            h3 {
+                                font: bold 18px/1 "Roboto"; //////////////
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+                            display: inline-block;
+                            width: 80%; /////////////
+                            height: 70px;///////////////
+                            background: #fff;
+                            margin-bottom: 10px;
+                            padding-right: 1%;
+            
+                            input[type=text] {
+                                width:100%; 
+                                height:40px;  ////////////
+                                border:1px solid #bbb; 
+                                background:rgb(240, 240, 240); 
+                                padding-left:20px; 
+                            }
+                        }
+            
+                        .password {
+                            h3 {
+                                font: bold 18px/1 "Roboto"; /////////////
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+                            display: inline-block;
+                            width: 80%; /////////////////
+                            height: 70px; ////////////
+                            background: #fff;
+                            margin-bottom: 10px;
+                            padding-right: 1%;
+            
+                            input[type=password] {
+                                width:100%; 
+                                height:40px; /////////////
+                                border:1px solid #bbb; 
+                                background:rgb(240, 240, 240); 
+                                padding-left:20px; 
+                            }
+                        }
+            
+                        .aim {
+                            display: none;
+                            h3 {
+                                font: bold 18px/1 "Roboto"; ////////////
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+                            display: inline-block;
+                            width: 40%;
+                            height: 100px;
+                            background: #fff;
+                            margin-bottom: 10px;
+                            padding-right: 1%;
+            
+                            p {
+                                // display: inline-block;
+                                display: block;///////////////
+                                font: bold 20px/1 "Roboto";
+                                line-height: 50px; 
+                                margin-right: 12px;
+                            }
+                        }
+            
+                        .interest {
+                            display: none;
+                            h3 {
+                                font: bold 18px/1 "Roboto"; ////////////
+                                text-align: left;
+                                margin-bottom: 5px;
+                                color: #555;
+                            }
+                            display: inline-block;
+                            width: 40%;
+                            height: 100px;
+                            background: #fff;
+                            margin-bottom: 10px;
+                            padding-right: 1%;
+            
+                            p {
+                                // display: inline-block; 
+                                display: block; //////////////////////
+                                font: bold 20px/1 "Roboto";
+                                line-height: 50px; 
+                                margin-right: 12px;
+                                margin-left: 10px;
+                            }
+                        }
+            
+                        .start {
+                            display: inline-block;
+                            width: 100%;
+                            height: 100%; /////////////// 
+                            background-color: rgb(240, 240, 240);
+                            padding-top: 2.5%;
+                            
+                            p {
+                                background-color: none;
+                                display: inline-block;
+                                width: 80%; //////////////
+                                font: bold 15px/1.2 "Roboto";
+                                color: #555;
+                                padding-top: 15px; ////////////
+                                padding-bottom: 30px; //////////////////
+            
+                                a {
+                                    color: #333;
+                                    border-bottom: 2px solid #555;
+                                }
+                            }
+            
+                            .Engine_Start {
+                                cursor: pointer;
+                                background-color: rgb(230, 0, 0);
+                                border-radius: 10px;
+                                display: inline-block;
+                                width: 60%; /////////////
+                                transition: 0.5s;
+                                margin-bottom: 30px;
+            
+                                .Join_Btn {
+                                    width: 150px;
+                                    height: 80px; //////////////
+                                    margin: 0 auto;
+                                    
+                                    a {
+                                        font: bold 20px/1 "Roboto"; ///////////////
+                                        color: #fff;
+                                        line-height: 80px; /////////////
+                                    }
+                                }
+            
+                                &:hover {
+                                    background-color: #fff;
+                                    transition: 0.5s;
+                                    box-shadow: 0 0 0 3px lightgreen inset;
+                                    box-sizing: border-box;
+                                    .Join_Btn {
+                                        a {
+                                            color: rgb(230, 0, 0);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .footerTop {
+            margin-top: 100px;
+            border-bottom: 2px solid rgb(240, 240, 240);
+        }
     }
 }
