@@ -493,8 +493,16 @@
                     li {
                         width: 20%;
                         margin-bottom: 15px;
-    
+                        margin-right: 10px;
                         &:last-child {margin-right: 0px;}
+
+                        height: 40px;
+                        border-radius: 10px;
+
+                        a {
+                            font: bold 13px/1 "Roboto";
+                            line-height: 40px;
+                        }
                     }
                 }
             }
