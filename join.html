@@ -64,11 +64,6 @@
             
             <form action="/" method="post">
                 <fieldset>
-                    <!-- <p>
-                        <label for="terms">
-                        Exploring glacial areas requires some preliminary research. <br>This is necessary for your safety and conservation of the glacier.</label>
-                    </p> -->
-                    
                     <textarea name="terms" id="terms" cols="30" rows="10">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero omnis cupiditate voluptatem quo id assumenda atque, repellat eius officia quos ipsa deserunt. Natus dolorem saepe dicta doloremque mollitia voluptates beatae velit, nihil praesentium, eius veniam obcaecati necessitatibus. Ullam minima recusandae quos omnis quae! Doloribus, dolorem. Iste, hic voluptates! Voluptatem quas vero delectus laudantium blanditiis commodi veniam eos explicabo perspiciatis rerum quasi aspernatur quisquam ratione enim et quos deserunt voluptate aperiam quod, eaque dolorum. Aliquam exercitationem fugit enim quaerat. Nobis nemo eos ratione omnis assumenda ipsa similique hic, illum aliquam commodi veritatis autem dolorem iusto! Rem, hic. Consequatur itaque dicta molestiae quidem rerum id similique autem possimus necessitatibus dolor assumenda libero, eaque deleniti dolores mollitia. Dicta eius perferendis dolorem dolor odio ipsam qui in quos accusantium animi quo maxime, vitae a? Quae minus vero deserunt iusto atque impedit, aperiam facilis explicabo, nisi natus quasi tempora cumque? Aliquid provident molestiae accusamus assumenda saepe, fuga minus ea architecto soluta a, voluptatibus veritatis quis repudiandae officia mollitia voluptatum ipsum ex quaerat eum corporis maiores. Suscipit, consequuntur, iste sapiente eligendi culpa exercitationem et dolorum accusantium repellendus fugiat facere explicabo dicta atque ab. Eum sunt quam atque voluptatum dolorum ducimus, vitae sed beatae porro voluptates amet!
                     </textarea>
 
@@ -76,8 +71,6 @@
                         <input type="checkbox" name="agree" id="agree">
                         <label for="agree">I agree to the Treaty for the Protection of Glacier Areas.</label>
                     </div>
-
-                    <!-- <h2>MEMBER INFORMATION</h2> -->
 
                     <ul>
                         <li class="name">
@@ -92,9 +85,9 @@
                             <h3>Email</h3>
                             <input type="text" name="email" id="email" placeholder="Your E-mail">
                                 <select name="company" id="company">
-                                    <option value="naver">@naver.com</option>
-                                    <option value="nate">@nate.com</option>
-                                    <option value="daum">@daum.net</option>
+                                    <option value="naver">@google.com</option>
+                                    <option value="nate">@microsoft.com</option>
+                                    <option value="daum">@yahoo.net</option>
                                 </select>
                         </li>
                         <li class="id">
@@ -103,86 +96,46 @@
                         </li>
                         <li class="password">
                             <h3>password</h3>
-                            <input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해 주세요" required>
+                            <input type="password" name="pwd" id="pwd" placeholder="Your PASSWORD" required>
                         </li>
                         <li class="aim">
                             <h3>Aim</h3>
-                            <label for="reading"><input type="checkbox" value="reading" id="reading" name="hobby">Expedition</label>                               
-                            <label for="music"><input type="checkbox" value="music" id="music" name="hobby">Research</label>                                
-                            <label for="game"><input type="checkbox" value="game" id="game" name="hobby">Tour</label> 
+                            <label for="expdeition">
+                                <input type="radio" value="expdeition" id="expdeition" name="aim">
+                                <p>Expedition</p>
+                                
+                            </label>                               
+                            <label for="research">
+                                <input type="radio" value="research" id="research" name="aim">
+                                <p>Research</p>
+                            </label>                                
+                            <label for="tour">
+                                <input type="radio" value="tour" id="tour" name="aim">
+                                <p>Tour</p>
+                            </label> 
+                        </li>
+                        <li class="interest">
+                            <h3>Interest</h3>
+                            <label for="animal"><input type="checkbox" value="animal" id="animal" name="interest"><p>Animal</p>
+                            </label>
+                            <label for="glacier"><input type="checkbox" value="glacier" id="glacier" name="interest"><p>Glacier</p>
+                            </label>  
+                            <label for="photo"><input type="checkbox" value="photo" id="photo" name="interest"><p>Photo</p>
+                            </label>
+                            <label for="landscape"><input type="checkbox" value="landscape" id="landscape" name="interest"><p>Landscape</p>
+                            </label>    
+                            
                         </li>
                         <li class="start">
-                            <p>By clicking "Engine Start" you argee to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
-                            <a href="#">Engine Start</a>
+                            <p>By clicking "Engine Start" you argee to our<br><a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a></p>
+
+                            <div class="Engine_Start">
+                                <div class="Join_Btn">
+                                    <a href="#">Engine Start</a>
+                                </div>
+                            </div>
                         </li>
                     </ul>
-
-
-
-                    <table summary="회원의 아이디, 비밀번호, 성별, 취미 입력양식폼">
-                        <caption class="hidden">회원정보 입력양식 테이블</caption>
-                        <tr>
-                            <th scope="row"><label for="id">USER ID</label> </th>
-                            <td>
-                                <input type="text" name="id" id="id" placeholder="아이디를 입력해 주세요" required>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><label for="pwd">PASSWORD</label></th>
-                            <td><input type="password" name="pwd" id="pwd" placeholder="비밀번호를 입력해 주세요" required></td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><label for="pwd2">RE PASSWORD</label></th>
-                            <td><input type="password" name="pwd2" id="pwd2" placeholder="비밀번호를 재입력해 주세요" required></td>
-                        </tr>
-                        <tr>
-                            <th scope="row">HOBBY</th>
-                            <td>
-                                <label for="reading"><input type="checkbox" value="reading" id="reading" name="hobby">READING</label>                               
-
-                                <label for="music"><input type="checkbox" value="music" id="music" name="hobby">MUSIC</label>                                
-
-                                <label for="game"><input type="checkbox" value="game" id="game" name="hobby">GAME</label> 
-                                <p class="hobbyTxt">취미를 하나이상 선택해 주세요</p>                               
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row">GENDER</th>
-                            <td>
-                                <label for="male">
-                                    <input type="checkbox" name="gender" id="male" value="male">MALE
-                                </label>
-                                <label for="female">
-                                    <input type="checkbox" name="gender" id="female" value="female">FEMALE
-                                </label>
-                                <p class="genderTxt">성별을 선택해 주세요</p>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><label for="email">E-MAIL</label></th>
-                            <td>
-                                <input type="text" name="email" id="email" placeholder="이메일 주소를 입력해 주세요">
-                                <select name="company" id="company">
-                                    <option value="naver">@naver.com</option>
-                                    <option value="nate">@nate.com</option>
-                                    <option value="daum">@daum.net</option>
-                                </select>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th scope="row"><label for="comments">COMMENTS</label></th>
-                            <td>
-                                <textarea name="comments" id="comments" cols="30" rows="10" placeholder="코멘트를 입력해 주세요"></textarea>
-                            </td>
-                        </tr>
-                        <tr>
-                            <th colspan="2">
-                                <input type="reset" value="CANCEL">
-                                <input type="submit" value="SUBMIT">
-                            </th>
-                        </tr>
-                    </table>
-                </fieldset>
             </form>
         </div>
         <div class="footerTop"></div>
