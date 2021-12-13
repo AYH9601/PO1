@@ -336,6 +336,7 @@
                     height: 200px;
                     border-radius: 50%;
                     margin-bottom: 20px;
+                    border: 2px solid rgb(240, 240, 240);
                 }
 
                 >h1 {
@@ -373,6 +374,14 @@
                     color: white;
                     line-height: 40px;
                     text-align: center;
+                    transition: 0.4s;
+
+                    &:hover {
+                        box-shadow: 0 0 0 2px rgb(230, 0, 0) inset;
+                        background: #fff;
+                        color: rgb(230, 0, 0);
+                        transition: 0.4s;
+                    }
                 }
             }
 
@@ -382,14 +391,41 @@
                 li {
                     display: inline-block;
                     padding: 10px 31px;
-    
+                    
+
                     i {
                         // width: 20%;
                         cursor: pointer;
                         text-align: center; /* 20% 너비 안에서 가운데 배치를 한 것 */
                         font-size: 30px;
                         text-shadow: 2px 2px 2px #ddd;
-                        color: #555
+                        color: #555;
+                        transition: 0.3s;
+                    }
+
+                    &:nth-of-type(1) {
+                        i {
+                            &:hover {
+                                color: rgb(64, 115, 255);
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                    &:nth-of-type(2) {
+                        i {
+                            &:hover {
+                                color: rgb(255, 64, 160);
+                                transition: 0.3s;
+                            }
+                        }
+                    }
+                    &:nth-of-type(3) {
+                        i {
+                            &:hover {
+                                color: rgb(64, 194, 255);
+                                transition: 0.3s;
+                            }
+                        }
                     }
                 }
             }

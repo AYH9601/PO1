@@ -228,7 +228,8 @@
           width: 200px;
           height: 200px;
           border-radius: 50%;
-          margin-bottom: 20px; }
+          margin-bottom: 20px;
+          border: 2px solid #f0f0f0; }
         #pro .inner .profile1 .profile > h1 {
           font-weight: bold;
           font-size: 22px;
@@ -257,7 +258,13 @@
           font-family: "Roboto";
           color: white;
           line-height: 40px;
-          text-align: center; }
+          text-align: center;
+          transition: 0.4s; }
+          #pro .inner .profile1 .profile .btnView:hover {
+            box-shadow: 0 0 0 2px #e60000 inset;
+            background: #fff;
+            color: #e60000;
+            transition: 0.4s; }
       #pro .inner .profile1 .contact {
         width: 100%; }
         #pro .inner .profile1 .contact li {
@@ -269,7 +276,17 @@
             /* 20% 너비 안에서 가운데 배치를 한 것 */
             font-size: 30px;
             text-shadow: 2px 2px 2px #ddd;
-            color: #555; }
+            color: #555;
+            transition: 0.3s; }
+          #pro .inner .profile1 .contact li:nth-of-type(1) i:hover {
+            color: #4073ff;
+            transition: 0.3s; }
+          #pro .inner .profile1 .contact li:nth-of-type(2) i:hover {
+            color: #ff40a0;
+            transition: 0.3s; }
+          #pro .inner .profile1 .contact li:nth-of-type(3) i:hover {
+            color: #40c2ff;
+            transition: 0.3s; }
 
 @media screen and (max-width: 1179px) {
   #header_us .inner {
@@ -1363,7 +1380,8 @@ a {
         width: 236px;
         float: left;
         padding: 20px;
-        border-right: 1px solid #dddddd; }
+        border-right: 1px solid #dddddd;
+        cursor: pointer; }
         #visual .inner #figBox li a {
           font: bold 15px/1 "Roboto";
           color: #e60000; }
@@ -1371,16 +1389,26 @@ a {
           background: #e60000;
           height: 76px;
           border-right: none;
-          text-align: center; }
+          text-align: center;
+          transition: 0.5s; }
           #visual .inner #figBox li:last-child a {
             font: bold 15px/2.5 "Roboto";
             color: #fff; }
+          #visual .inner #figBox li:last-child:hover {
+            background: #fff;
+            transition: 0.5s; }
+            #visual .inner #figBox li:last-child:hover a {
+              color: #e60000; }
         #visual .inner #figBox li p {
           font: bold 15px/1 "Roboto";
-          color: #555; }
+          color: #555;
+          transition: 0.5s; }
           #visual .inner #figBox li p > a {
             float: right;
             color: #555; }
+            #visual .inner #figBox li p > a:hover {
+              color: #e60000;
+              transition: 0.5s; }
     #visual .inner #figBox2 {
       width: 1180px;
       height: 180px;
@@ -1562,7 +1590,15 @@ a {
     #articles .tips article {
       display: inline-block;
       width: 585px;
-      height: 200px; }
+      height: 200px;
+      padding-top: 30px;
+      padding-right: 20px;
+      cursor: pointer;
+      transition: 0.3s; }
+      #articles .tips article:hover {
+        background: whitesmoke;
+        transition: 0.3s;
+        box-shadow: 0 0 0 3px #f0f0f0 inset; }
       #articles .tips article div {
         width: 30%;
         height: 150px;
@@ -1630,7 +1666,13 @@ a {
         color: #fff;
         text-align: center;
         cursor: pointer;
-        border: none; }
+        border: none;
+        transition: 0.5s; }
+        #engine .inner article:nth-child(2) .btnSearch:hover {
+          background: #fff;
+          color: #e60000;
+          box-shadow: 0 0 0 3px lightgreen inset;
+          transition: 0.5s; }
 
 #footer {
   width: 100%;
@@ -1672,7 +1714,17 @@ a {
             cursor: pointer;
             font-size: 35px;
             color: #c5c5c5;
-            padding-left: 30px; }
+            padding-left: 30px;
+            transition: 0.5s; }
+          #footer .inner article:nth-of-type(5) li:nth-of-type(2) i:hover {
+            color: #40c2ff;
+            transition: 0.5s; }
+          #footer .inner article:nth-of-type(5) li:nth-of-type(3) i:hover {
+            color: #4073ff;
+            transition: 0.5s; }
+          #footer .inner article:nth-of-type(5) li:nth-of-type(4) i:hover {
+            color: #ff40a0;
+            transition: 0.5s; }
 
 @media screen and (max-width: 1179px) {
   #header .inner {

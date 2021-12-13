@@ -266,6 +266,7 @@ a {text-decoration: none;}
                 float: left;
                 padding: 20px;
                 border-right: 1px solid rgb(221, 221, 221);
+                cursor: pointer;
 
                 a {
                     font: bold 15px/1 "Roboto";
@@ -277,21 +278,39 @@ a {text-decoration: none;}
                     height: 76px;
                     border-right: none;
                     text-align: center;
+                    transition: 0.5s;
                     
                     a {
                         font: bold 15px/2.5 "Roboto";
                         color: #fff;
+                    }
+
+                    &:hover {
+                        background: #fff;
+                        transition: 0.5s;
+
+                        a {
+                            color: rgb(230, 0, 0);
+                        }
                     }
                 }
 
                 p {
                     font: bold 15px/1 "Roboto";
                     color: #555;
+                    transition: 0.5s;
 
                     >a{
                         float: right;
                         color: #555;
+
+                        &:hover {
+                            color: rgb(230, 0, 0);
+                            transition: 0.5s;
+                        }
                     }
+
+
                 }
             }
         }
@@ -557,6 +576,16 @@ a {text-decoration: none;}
             display: inline-block;
             width: 585px;
             height: 200px;
+            padding-top: 30px;
+            padding-right: 20px;
+            cursor: pointer;
+            transition: 0.3s;
+
+            &:hover {
+                background: rgb(245, 245, 245);
+                transition: 0.3s;
+                box-shadow: 0 0 0 3px rgb(240, 240, 240) inset;
+            }
 
             div {
                 width: 30%;
@@ -661,6 +690,14 @@ a {text-decoration: none;}
                     text-align: center;
                     cursor: pointer; 
                     border: none;
+                    transition: 0.5s;
+
+                    &:hover {
+                        background: #fff;
+                        color: rgb(230, 0, 0);
+                        box-shadow: 0 0 0 3px lightgreen inset;
+                        transition: 0.5s;
+                    }
                 }
             }
         }
@@ -724,6 +761,34 @@ a {text-decoration: none;}
                         font-size: 35px;
                         color: rgb(197, 197, 197);
                         padding-left: 30px;
+                        transition: 0.5s;
+                    }
+
+                    &:nth-of-type(2) {
+                        i {
+                            &:hover {
+                                color: rgb(64, 194, 255);
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        i {
+                            &:hover {
+                                color: rgb(64, 115, 255);
+                                transition: 0.5s;
+                            }
+                        }
+                    }
+
+                    &:nth-of-type(4) {
+                        i {
+                            &:hover {
+                                color: rgb(255, 64, 160);
+                                transition: 0.5s;
+                            }
+                        }
                     }
                 }
             }
