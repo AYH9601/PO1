@@ -742,6 +742,10 @@ a {text-decoration: none;}
             &:nth-of-type(3) {
                 font: bold 15px/1.5 "Roboto";
                 color: #888;
+
+                a {
+                    color: #888;
+                }
             }
 
             &:nth-of-type(4) {
