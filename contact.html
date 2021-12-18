@@ -63,28 +63,34 @@
 
             <div class="innerHalf1">
                 <form id="contact-form">
+                    <input type="hidden" name="contact_number">
                     <ul>
                         <li>
                             <h3>Name</h3>
-                            <input type="text" required placeholder="Write Your Name" name="to_name">
+                            <input type="text" required placeholder="Your Name" name="to_name">
                         </li>
                         <li>
                             <h3>PhoneNumber</h3>
-                            <input type="text" required placeholder="Write Your PhoneNumber" name="contact">
+                            <input type="text" required placeholder="Your PhoneNumber" name="contact">
                         </li>
                         <li>
                             <h3>Email</h3>
-                            <input type="text" required placeholder="Write Your Email" name="from_name">
+                            <input type="text" required placeholder="Your Email" name="from_name">
                         </li>
                         <li>
                             <h3>Message</h3>
-                            <textarea required placeholder="Write Your Message" name="message_html" cols="30" rows="5"></textarea>
+                            <textarea required placeholder="Write Your Message" name="message_html" cols="20" rows="5"></textarea>
+                            <div class="privacy">
+                                <input type="checkbox" name="agree" id="agree">
+                                <label for="agree">
+                                    I agree to the collection and use of <br>personal information for reply only.
+                                </label>
+                            </div>
                         </li>
                         <li>
-                            <input type="submit" value="문의하기">
+                            <input type="submit" value="SEND">
                         </li>
                     </ul>
-    
     
                     <!-- <input type="hidden" name="contact_number">
                     <input type="text" required placeholder="Write Your Name" name="to_name">
@@ -96,6 +102,11 @@
                 </form>
 
             </div>
+
+            <div class="innerHalf2">
+                <h2>Your comments <br> Make everyone <br> More safe.</h2>
+            </div>
+
         </div>
     </section>
 

@@ -1445,8 +1445,11 @@ aside {
   margin-bottom: 50px; }
 #contact .inner {
   width: 1180px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: center; }
   #contact .inner h1 {
+    text-align: left;
+    margin-left: 6%;
     font: bold 30px/1 "Roboto";
     padding-bottom: 30px;
     color: #555; }
@@ -1456,26 +1459,94 @@ aside {
       margin-right: 10px;
       transform: translateY(10px); }
   #contact .inner .innerHalf1 {
-    width: 49%;
-    background: cyan;
-    padding: 50px; }
+    width: 39%;
+    background: #fff;
+    padding: 30px;
+    display: inline-block;
+    margin-right: 10%;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); }
     #contact .inner .innerHalf1 ul li {
-      background: darkcyan; }
+      margin-bottom: 30px;
+      text-align: center; }
+      #contact .inner .innerHalf1 ul li h3 {
+        font: bold 22px/1 "Roboto";
+        text-align: left;
+        margin-bottom: 5px;
+        margin-left: 10%;
+        color: #555;
+        margin-bottom: 10px; }
       #contact .inner .innerHalf1 ul li:nth-of-type(1), #contact .inner .innerHalf1 ul li:nth-of-type(2) {
         display: inline-block;
         width: 49%; }
         #contact .inner .innerHalf1 ul li:nth-of-type(1) input[type=text], #contact .inner .innerHalf1 ul li:nth-of-type(2) input[type=text] {
           width: 80%;
-          height: 50px; }
+          height: 50px;
+          background: #f0f0f0;
+          padding-left: 10px;
+          border: none; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(1) input::placeholder, #contact .inner .innerHalf1 ul li:nth-of-type(2) input::placeholder {
+          color: #999;
+          font-family: "Roboto"; }
+      #contact .inner .innerHalf1 ul li:nth-of-type(3) h3 {
+        margin-left: 5.5%;
+        margin-bottom: 10px; }
       #contact .inner .innerHalf1 ul li:nth-of-type(3) input[type=text] {
-        width: 89%; }
+        width: 89%;
+        height: 50px;
+        background: #f0f0f0;
+        padding-left: 10px;
+        border: none; }
+      #contact .inner .innerHalf1 ul li:nth-of-type(3) input::placeholder {
+        color: #999;
+        font-family: "Roboto"; }
+      #contact .inner .innerHalf1 ul li:nth-of-type(4) h3 {
+        margin-left: 5.5%; }
       #contact .inner .innerHalf1 ul li:nth-of-type(4) textarea {
-        width: 89%; }
-      #contact .inner .innerHalf1 ul li h3 {
-        font: bold 22px/1 "Roboto";
-        text-align: left;
-        margin-bottom: 5px;
-        color: #555; }
+        width: 89%;
+        resize: none;
+        height: 200px;
+        background: #f0f0f0;
+        border: none; }
+      #contact .inner .innerHalf1 ul li:nth-of-type(4) textarea::placeholder {
+        color: #999;
+        font-family: "Roboto";
+        padding: 10px; }
+      #contact .inner .innerHalf1 ul li:nth-of-type(4) .privacy {
+        margin-top: 25px;
+        display: block; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(4) .privacy label {
+          font: bold 14px/1 "Roboto"; }
+      #contact .inner .innerHalf1 ul li:nth-of-type(5) {
+        margin-bottom: 0px; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(5) input[type=submit] {
+          width: 60%;
+          height: 70px;
+          background-color: #e60000;
+          border: none;
+          font: bold 20px/1 "Roboto";
+          color: #fff;
+          transition: 0.5s; }
+          #contact .inner .innerHalf1 ul li:nth-of-type(5) input[type=submit]:hover {
+            background-color: #fff;
+            transition: 0.5s;
+            box-shadow: 0 0 0 3px lightgreen inset;
+            color: #e60000; }
+  #contact .inner .innerHalf2 {
+    display: inline-block;
+    width: 39%;
+    height: 690px;
+    background: #f0f0f0;
+    background: url(../img/icebreaker.jpg) no-repeat center/cover;
+    opacity: 0.8;
+    transform: translateY(8.5%);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+    position: relative; }
+    #contact .inner .innerHalf2 h2 {
+      position: absolute;
+      text-align: left;
+      top: 30px;
+      left: 30px;
+      color: #fff; }
 
 * {
   margin: 0;

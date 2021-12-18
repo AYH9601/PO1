@@ -18,7 +18,7 @@ window.onload = function() {
             .then(
                 function(response) {
                     console.log('메일 발송 성공', response.status, response.text); 
-                    alert("문의 내용이 전송되었습니다.");   
+                    alert("문의 내용이 전송되었습니다. 귀하의 의견에 감사합니다.");   
                     form.reset();   
                 }, 
                 function(error) {

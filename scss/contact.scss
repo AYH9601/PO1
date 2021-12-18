@@ -13,8 +13,11 @@
     .inner {
         width: 1180px;
         margin: 0 auto;
+        text-align: center;
 
         h1 {
+            text-align: left;
+            margin-left: 6%;
             img {
                 display: inline-block;
                 width: 40px;
@@ -27,13 +30,27 @@
         }
 
         .innerHalf1 {
-            width: 49%;
-            background: cyan;
-            padding: 50px;
+            width: 39%;
+            background: #fff;
+            padding: 30px;
+            display: inline-block;
+            margin-right: 10%;
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
 
             ul {
                 li {
-                    background: darkcyan;
+                    // background: darkcyan;
+                    margin-bottom: 30px;
+                    text-align: center;
+
+                    h3 {
+                        font: bold 22px/1 "Roboto";
+                        text-align: left;
+                        margin-bottom: 5px;
+                        margin-left: 10%;
+                        color: #555;
+                        margin-bottom: 10px;
+                    }
 
                     &:nth-of-type(1), &:nth-of-type(2) {
                         display: inline-block; 
@@ -42,26 +59,75 @@
                         input[type=text] {
                             width: 80%;
                             height: 50px;
+                            background: rgb(240, 240, 240);
+                            padding-left: 10px;
+                            border: none;
+                            
+                        }
+                        input::placeholder {
+                            color: #999;
+                            font-family: "Roboto";
                         }
                     }
 
                     &:nth-of-type(3) {
+                        h3 {margin-left: 5.5%; margin-bottom: 10px;}
                         input[type=text] {
                             width: 89%;
+                            height: 50px;
+                            background: rgb(240, 240, 240);
+                            padding-left: 10px;
+                            border: none;
+                        }
+                        input::placeholder {
+                            color: #999;
+                            font-family: "Roboto";
                         }
                     }
 
                     &:nth-of-type(4) {
+                        h3 {margin-left: 5.5%;}
                         textarea {
                             width: 89%;
+                            resize: none;
+                            height: 200px;
+                            background: rgb(240, 240, 240);
+                            border: none;
+                        }
+
+                        textarea::placeholder {
+                            color: #999;
+                            font-family: "Roboto";
+                            padding: 10px;
+                        }
+
+                        .privacy {
+                            margin-top: 25px;
+                            display: block;
+                            label {
+                                font: bold 14px/1 "Roboto";
+                            }
                         }
                     }
 
-                    h3 {
-                        font: bold 22px/1 "Roboto";
-                        text-align: left;
-                        margin-bottom: 5px;
-                        color: #555;
+                    &:nth-of-type(5) {
+                        margin-bottom: 0px;
+                        input[type=submit] {
+                            width: 60%;
+                            height: 70px;
+                            background-color: rgb(230,0,0);
+                            border: none;
+                            font: bold 20px/1 "Roboto";
+                            color: #fff;
+                            transition: 0.5s;
+
+                            &:hover {
+                                background-color: #fff;
+                                transition: 0.5s;
+                                box-shadow: 0 0 0 3px lightgreen inset;
+                                color: rgb(230,0,0);
+                            }
+                        }
                     }
 
 
@@ -70,6 +136,26 @@
 
 
                 }
+            }
+        }
+
+        .innerHalf2 {
+            display: inline-block;
+            width: 39%;
+            height: 690px;
+            background:rgb(240, 240, 240); 
+            background: url(../img/icebreaker.jpg) no-repeat center/cover;
+            opacity: 0.8;
+            transform: translateY(8.5%);
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+            position: relative;
+
+            h2 {
+                position: absolute;
+                text-align: left;
+                top: 30px;
+                left: 30px;
+                color: #fff;
             }
         }
     }
