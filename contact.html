@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Frozen</title>
     <script src="https://kit.fontawesome.com/3438be3ebb.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/Frozenfavicon.ico">
     <script defer src="js/main.js"></script>
-    <script defer src="js/youtube.js"></script>
+    <script defer src="js/form.js"></script>
 </head>
 <body>
     <header id="header_us">
@@ -23,7 +24,7 @@
                     <li><a href="youtube.html">YOUTUBE</a></li>
                     <li><a href="about_us.html">ABOUT US</a></li>
                     <li><a href="community.html">COMMUNITY</a></li>
-                    <li><a href="gallery.html">GALLERY</a></li>
+                    <li><a href="#">GALLERY</a></li>
                 </ul>
 
                 <ul class="util">
@@ -54,15 +55,46 @@
 
         </div>
     </header>
-    
-    <section class="youtube">
+
+    <section id="contact">
         <div class="sub_visual"></div>
-        <div class="showVideo">
-            <h1><img src="img/logo.png" alt="logo">Frozen Record</h1>
-            <p>Check out the dangers and beauty of the glacier before starting your adventure</p>
-        </div>
         <div class="inner">
-            <div class="vidList">
+            <h1><img src="img/logo.png" alt="logo">Frozen Contact Center</h1>
+
+            <div class="innerHalf1">
+                <form id="contact-form">
+                    <ul>
+                        <li>
+                            <h3>Name</h3>
+                            <input type="text" required placeholder="Write Your Name" name="to_name">
+                        </li>
+                        <li>
+                            <h3>PhoneNumber</h3>
+                            <input type="text" required placeholder="Write Your PhoneNumber" name="contact">
+                        </li>
+                        <li>
+                            <h3>Email</h3>
+                            <input type="text" required placeholder="Write Your Email" name="from_name">
+                        </li>
+                        <li>
+                            <h3>Message</h3>
+                            <textarea required placeholder="Write Your Message" name="message_html" cols="30" rows="5"></textarea>
+                        </li>
+                        <li>
+                            <input type="submit" value="문의하기">
+                        </li>
+                    </ul>
+    
+    
+                    <!-- <input type="hidden" name="contact_number">
+                    <input type="text" required placeholder="Write Your Name" name="to_name">
+                    <input type="text" required placeholder="Write Your PhoneNumber" name="contact">
+                    <input type="text" required placeholder="Write Your Email" name="from_name">
+                    <textarea required placeholder="Write Your Message" name="message_html" cols="30" rows="5"></textarea>
+                    
+                    <input type="submit" value="문의하기"> -->
+                </form>
+
             </div>
         </div>
     </section>

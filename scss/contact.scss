@@ -1,0 +1,76 @@
+#contact {
+    .sub_visual{
+        width:100%; 
+        height:250px; 
+        
+        background:rgb(240, 240, 240); 
+        background: url(../img/iceland.jpg) no-repeat center/cover;
+        opacity: 0.8;
+
+        margin-bottom: 50px;
+    }
+
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+
+        h1 {
+            img {
+                display: inline-block;
+                width: 40px;
+                margin-right: 10px;
+                transform: translateY(10px);
+            }
+            font: bold 30px/1 "Roboto";
+            padding-bottom: 30px;
+            color: #555;
+        }
+
+        .innerHalf1 {
+            width: 49%;
+            background: cyan;
+            padding: 50px;
+
+            ul {
+                li {
+                    background: darkcyan;
+
+                    &:nth-of-type(1), &:nth-of-type(2) {
+                        display: inline-block; 
+                        width: 49%;
+
+                        input[type=text] {
+                            width: 80%;
+                            height: 50px;
+                        }
+                    }
+
+                    &:nth-of-type(3) {
+                        input[type=text] {
+                            width: 89%;
+                        }
+                    }
+
+                    &:nth-of-type(4) {
+                        textarea {
+                            width: 89%;
+                        }
+                    }
+
+                    h3 {
+                        font: bold 22px/1 "Roboto";
+                        text-align: left;
+                        margin-bottom: 5px;
+                        color: #555;
+                    }
+
+
+
+
+
+
+                }
+            }
+        }
+    }
+}

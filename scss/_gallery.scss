@@ -1,0 +1,142 @@
+.gallery {
+    .sub_visual{
+        width:100%; 
+        height:250px; 
+        
+        background:rgb(240, 240, 240); 
+        background: url(../img/iceland.jpg) no-repeat center/cover;
+        opacity: 0.8;
+
+        margin-bottom: 50px;
+    }
+
+    .inner {
+        width: 1180px;
+        margin: 0 auto;
+
+        h1 {
+            img {
+                display: inline-block;
+                width: 40px;
+                margin-right: 10px;
+                transform: translateY(10px);
+            }
+
+            font: bold 30px/1 "Roboto";
+            padding-bottom: 20px;
+            color: #555;
+        }
+        
+        p {
+            color: #999;
+            font: normal 25px/1 "Roboto";
+        }
+
+        #searchBox {
+            width: 100%;
+            padding: 50px;
+            background-color: rgb(240, 240, 240);
+            box-sizing: border-box;
+            font-size: 0;
+            text-align: right;
+    
+            input[type=text]{
+                width: 250px; 
+                height: 35px; 
+                padding-left: 15px; 
+                box-sizing: border-box;
+                font: bold 12px/1px "Roboto";
+                border: none;
+            }
+    
+            .btnSearch {
+                width: 100px; height: 35px;
+                background: rgb(230, 0, 0);
+                font: bold 12px/30px "Roboto";
+                color: #fff; text-align: center;
+                margin-left: 5px;
+                cursor: pointer; border: none;
+            }
+        }
+    
+        #wrap {
+            width: 100%; 
+            padding: 50px 0;
+    
+            .loading {
+                width: 100px;
+                position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                transition: 1s;
+    
+                &.off {
+                    opacity: 0;
+                }
+            }
+    
+            #list {
+                width: 100%; transform: translateY(100px); opacity: 0; transition: 1s;
+                
+                &.on {
+                    opacity: 1;transform: translateY(0px);
+                }
+    
+                &::after{content: ""; display: block; clear: both;}
+    
+                li {
+                    float: left; width: calc(100% / 4); padding: 10px;
+                    box-sizing: border-box;
+    
+                    div {
+                        width: 100%; padding: 30px;
+                        box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
+                        box-sizing: border-box; border-radius: 5px;
+                        //이미지
+                        a {
+                            >img{width: 100%; filter: grayscale(80%); transition: 0.5s;}
+                        }
+    
+                        //title
+                        p {
+                            font: 12px/1.2 "arial"; color: #777;
+                            margin-top: 10px; margin-bottom: 10px;
+                        }
+                        //buddyicon + name
+                        span {
+                            display: flex; align-items: center; margin-top: 20px;
+                            >img {
+                                width: 20px; height: 20px; border-radius: 50%;
+                                margin-right: 5px; filter: grayscale(100%);
+                            }
+
+                            strong{font: 11px/1 "arial"; color: #999;}
+                        }
+    
+                        &:hover a>img{
+                            filter: grayscale(0%); 
+                            transform: scale(105%); 
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+}
+
+aside {
+    width: 100%; height: 100vh; background: rgba(0,0,0,0.9);
+    position: fixed; top: 0; left: 0;
+    padding: 5vw; box-sizing: border-box;
+
+    .con {
+        width: 100%; height: 100%;
+        >img {
+            width: 100%; height: 100%; object-fit: contain;
+        }
+    }
+    .close {
+        position: absolute; top: 20px; right: 20px; color: #fff;
+    }
+}

@@ -52,6 +52,12 @@
                     font: bold 15px/1 "Roboto";
                     color: #999;
                 }
+
+                &:hover {
+                    a {
+                        color: #000;
+                    }
+                }
             }
         }
 
@@ -322,6 +328,11 @@
 
                     &:nth-of-type(2) {
                         float: right;
+                        i {
+                            &.on {
+                                color: rgb(230, 0, 0);
+                            }
+                        }
                     }
                 }
             }
