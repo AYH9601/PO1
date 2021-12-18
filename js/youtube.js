@@ -17,7 +17,7 @@ fetch(url)
     items.forEach(item =>{
         let title = item.snippet.title;
         if(title.length >20){
-            title = title.substr(0,30)+"...";
+            title = title.substr(0,50)+"...";
         }
 
         let date = item.snippet.publishedAt;
@@ -30,7 +30,7 @@ fetch(url)
                         </a>
                         <div class="con">
                             <h2>${title}</h2>
-                            <span>${date}</span>
+                            
                         </div>
                     </article>
                 `;
