@@ -1,0 +1,149 @@
+.youtube {
+    .sub_visual{
+        width:100%; 
+        height:250px; 
+        
+        background:rgb(240, 240, 240); 
+        background: url(../img/iceland.jpg) no-repeat center/cover;
+        opacity: 0.8;
+
+        margin-bottom: 50px;
+    }
+
+    .showVideo {
+        width: 73%;
+        margin: 0 auto;
+        padding-top: 50px;
+        padding-bottom: 50px;
+
+        h1 {
+            img {
+                display: inline-block;
+                width: 40px;
+                margin-right: 10px;
+                transform: translateY(10px);
+            }
+
+            font: bold 30px/1 "Roboto";
+            padding-bottom: 20px;
+            color: #555;
+        }
+        
+        p {
+            color: #999;
+            font: normal 25px/1 "Roboto";
+        }
+    }
+
+    .inner {
+        width: 100%;
+        height: 100%;
+        // margin: 0 auto;
+        background: #fff;
+        border-bottom: 2px solid rgb(240, 240, 240);
+        padding-bottom: 50px;
+
+        .vidList {
+            margin: 0 auto;
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: 
+            space-evenly; 
+            align-content: center;
+        
+            article {
+                margin-top: 50px;
+                padding: 30px;
+                width: 25%; 
+                margin-right: 5%;
+                height: 500px; 
+                background-color: #fff;
+                box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+                transition: 0.5s;
+                margin-bottom: 70px;
+
+                &:nth-of-type(3),&:nth-of-type(6),&:nth-of-type(9) {
+                    margin-right: 0%;
+                }
+
+        
+                .pic {
+                    display: block; 
+                    width: 100%; 
+                    height: 70%;
+                    overflow: hidden;
+
+                    >img {
+                        width: 100%; height: 100%; object-fit: cover;
+                        opacity: 0.7;
+                        transition: 0.5s;
+                    }
+                }
+
+                .con {
+                    width: 100%; height: 30%; padding: 20px; box-sizing: border-box;
+                    background: #fff;
+                    position: relative;
+        
+                    h2 {
+                        font: bold 20px/1.2 "Roboto"; 
+                        color: #999; 
+                        margin-bottom: 50px;
+                        transition: 0.5s;
+                    }
+
+                    span {
+                        font: bold 16px/1 "Roboto"; 
+                        color: rgb(240, 240, 240);
+                        transition: 0.5s;
+                        position: absolute;
+                        right: 0;
+                        bottom: 0;
+                    }
+                }
+
+                &:hover {
+                    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.3);
+                    transition: 0.5s;
+
+                    .pic {
+                        overflow: hidden;
+                        transition: 0.5s;
+    
+                        >img {
+                            transform : scale(1.1);
+                            opacity: 1;
+                            transition: 0.5s;
+                        }
+                    }
+                    .con {
+
+                        h2 {
+                            color: #000;
+                            transition: 0.5s;
+                        }
+                        span {
+                            color: #999;
+                            transition: 0.5s;
+                        }
+                    }
+                }
+            }
+        }
+    
+    }
+    
+    figure {
+        width: 100%; height: 100vh; position: fixed; top: 0;
+        left: 0; background: rgba(0,0,0,0.8);
+        overflow: hidden;
+        padding: 5vw; box-sizing: border-box;
+        display: flex; justify-content: center; align-items: center;
+    
+        .btnClose {
+            position: absolute; top: 50px; right: 50px; color: #fff; cursor: pointer;
+            font-family: "Roboto";
+        }
+    }
+}
