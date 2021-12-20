@@ -19,6 +19,7 @@ callData(url1);
 //이미지 검색 버튼 클릭 시 
 btn.addEventListener("click", e=>{
     let tag = input.value;
+
     //flickr.photos.search method
     const url = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
 
@@ -105,7 +106,6 @@ body.addEventListener("click", e=>{
     }
 });
 
-
 function callData(url){
     frame.innerHTML = "";
     loading.classList.remove("off");
@@ -115,6 +115,7 @@ function callData(url){
     .then(data=>{
         return data.json();
     })
+
     .then(json=>{
             let items = json.photos.photo;
             
@@ -137,7 +138,7 @@ function callData(url){
 
 function createList(items){
     let htmls = "";
-    // https://live.staticflickr.com/{server_id}/{id}_{secret}_{size-suffix}.jpg
+
     items.forEach(data=>{
         console.log(data)
         let imgSrc = `https://live.staticflickr.com/${data.server}/${data.id}_${data.secret}_m.jpg` 
@@ -166,7 +167,6 @@ function delayLoading(){
     const imgs = frame.querySelectorAll("img");
     const len = imgs.length;
     let count = 0; 
-
 
     for (let el of imgs){
         el.onload = () =>{

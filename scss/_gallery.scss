@@ -56,6 +56,14 @@
                 color: #fff; text-align: center;
                 margin-left: 5px;
                 cursor: pointer; border: none;
+                transition: 0.5s;
+
+                &:hover {
+                    background-color: #fff;
+                    transition: 0.5s;
+                    box-shadow: 0 0 0 3px lightgreen inset;
+                    color: rgb(230, 0, 0);
+                }
             }
         }
     
