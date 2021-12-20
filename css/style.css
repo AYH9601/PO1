@@ -1202,7 +1202,7 @@
   opacity: 0.8;
   margin-bottom: 50px; }
 .youtube .showVideo {
-  width: 73%;
+  width: 1180px;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px; }
@@ -1608,11 +1608,6 @@ ul, ol, li {
 a {
   text-decoration: none; }
 
-.tips::after {
-  content: '';
-  display: block;
-  clear: both; }
-
 #header {
   width: 100%;
   background-color: #f0f0f0; }
@@ -1988,6 +1983,10 @@ a {
     margin: 0 auto;
     border-top: 2px solid #f0f0f0;
     text-align: center; }
+    #articles .tips::after {
+      content: '';
+      display: block;
+      clear: both; }
     #articles .tips h1 {
       text-align: center;
       font: bold 25px/1 "Roboto";
