@@ -28,7 +28,7 @@ btn.addEventListener("click", e=>{
         errMsg.style.display = "none";
     }else {
         console.log("검색어를 입력하세요.");
-        errMsg.innerText = "검색어를 입력하세요";
+        errMsg.innerText = "Please enter a search keyword";
         errMsg.style.display = "block";
 
         frame.innerHTML = ""; 
@@ -41,6 +41,7 @@ btn.addEventListener("click", e=>{
 input.addEventListener("keyup",e=>{
     if(e.key === "Enter"){
         let tag = input.value;
+        
         //flickr.photos.search mthod
         const url = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1&tags=${tag}&privacy_filter=1`;
 

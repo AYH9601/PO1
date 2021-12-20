@@ -30,7 +30,11 @@
           display: inline-block;
           padding: 30px 20px;
           font: bold 15px/1 "Roboto";
-          color: #e60000; }
+          color: #e60000;
+          transition: 0.3s; }
+        #header_us .inner #gnb .first:hover a {
+          color: #66bde6;
+          transition: 0.3s; }
       #header_us .inner #gnb li {
         float: left; }
         #header_us .inner #gnb li a {
@@ -1442,118 +1446,157 @@ aside {
     right: 20px;
     color: #fff; }
 
-#contact .sub_visual {
-  width: 100%;
-  height: 250px;
-  background: #f0f0f0;
-  background: url(../img/iceland.jpg) no-repeat center/cover;
-  opacity: 0.8;
-  margin-bottom: 50px; }
-#contact .inner {
-  width: 1180px;
-  margin: 0 auto;
-  text-align: center; }
-  #contact .inner h1 {
-    text-align: left;
-    margin-left: 6%;
-    font: bold 30px/1 "Roboto";
-    padding-bottom: 30px;
-    color: #555; }
-    #contact .inner h1 img {
-      display: inline-block;
-      width: 40px;
-      margin-right: 10px;
-      transform: translateY(10px); }
-  #contact .inner .innerHalf1 {
-    width: 39%;
-    background: #fff;
-    padding: 30px;
-    display: inline-block;
-    margin-right: 10%;
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); }
-    #contact .inner .innerHalf1 ul li {
-      margin-bottom: 30px;
-      text-align: center; }
-      #contact .inner .innerHalf1 ul li h3 {
-        font: bold 22px/1 "Roboto";
-        text-align: left;
-        margin-bottom: 5px;
-        margin-left: 10%;
-        color: #555;
-        margin-bottom: 10px; }
-      #contact .inner .innerHalf1 ul li:nth-of-type(1), #contact .inner .innerHalf1 ul li:nth-of-type(2) {
+#contact {
+  border-bottom: 2px solid #f0f0f0; }
+  #contact .sub_visual {
+    width: 100%;
+    height: 250px;
+    background: #f0f0f0;
+    background: url(../img/iceland.jpg) no-repeat center/cover;
+    opacity: 0.8;
+    margin-bottom: 50px; }
+  #contact .inner {
+    width: 1180px;
+    margin: 0 auto;
+    text-align: center;
+    padding-bottom: 100px; }
+    #contact .inner h1 {
+      text-align: left;
+      margin-left: 6%;
+      margin-bottom: -30px;
+      font: bold 30px/1 "Roboto";
+      padding-bottom: 30px;
+      color: #555; }
+      #contact .inner h1 img {
         display: inline-block;
-        width: 49%; }
-        #contact .inner .innerHalf1 ul li:nth-of-type(1) input[type=text], #contact .inner .innerHalf1 ul li:nth-of-type(2) input[type=text] {
-          width: 80%;
+        width: 40px;
+        margin-right: 10px;
+        transform: translateY(10px); }
+    #contact .inner .innerHalf1 {
+      width: 39%;
+      background: #fff;
+      padding: 30px;
+      display: inline-block;
+      margin-right: 10%;
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2); }
+      #contact .inner .innerHalf1 ul li {
+        margin-bottom: 30px;
+        text-align: center; }
+        #contact .inner .innerHalf1 ul li h3 {
+          font: bold 22px/1 "Roboto";
+          text-align: left;
+          margin-bottom: 5px;
+          margin-left: 10%;
+          color: #555;
+          margin-bottom: 10px; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(1), #contact .inner .innerHalf1 ul li:nth-of-type(2) {
+          display: inline-block;
+          width: 49%; }
+          #contact .inner .innerHalf1 ul li:nth-of-type(1) input[type=text], #contact .inner .innerHalf1 ul li:nth-of-type(2) input[type=text] {
+            width: 80%;
+            height: 50px;
+            background: #f0f0f0;
+            padding-left: 10px;
+            border: none; }
+          #contact .inner .innerHalf1 ul li:nth-of-type(1) input::placeholder, #contact .inner .innerHalf1 ul li:nth-of-type(2) input::placeholder {
+            color: #999;
+            font-family: "Roboto"; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(3) h3 {
+          margin-left: 5.5%;
+          margin-bottom: 10px; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(3) input[type=text] {
+          width: 89%;
           height: 50px;
           background: #f0f0f0;
           padding-left: 10px;
           border: none; }
-        #contact .inner .innerHalf1 ul li:nth-of-type(1) input::placeholder, #contact .inner .innerHalf1 ul li:nth-of-type(2) input::placeholder {
+        #contact .inner .innerHalf1 ul li:nth-of-type(3) input::placeholder {
           color: #999;
           font-family: "Roboto"; }
-      #contact .inner .innerHalf1 ul li:nth-of-type(3) h3 {
-        margin-left: 5.5%;
-        margin-bottom: 10px; }
-      #contact .inner .innerHalf1 ul li:nth-of-type(3) input[type=text] {
-        width: 89%;
-        height: 50px;
-        background: #f0f0f0;
-        padding-left: 10px;
-        border: none; }
-      #contact .inner .innerHalf1 ul li:nth-of-type(3) input::placeholder {
-        color: #999;
-        font-family: "Roboto"; }
-      #contact .inner .innerHalf1 ul li:nth-of-type(4) h3 {
-        margin-left: 5.5%; }
-      #contact .inner .innerHalf1 ul li:nth-of-type(4) textarea {
-        width: 89%;
-        resize: none;
-        height: 200px;
-        background: #f0f0f0;
-        border: none; }
-      #contact .inner .innerHalf1 ul li:nth-of-type(4) textarea::placeholder {
-        color: #999;
-        font-family: "Roboto";
-        padding: 10px; }
-      #contact .inner .innerHalf1 ul li:nth-of-type(4) .privacy {
-        margin-top: 25px;
-        display: block; }
-        #contact .inner .innerHalf1 ul li:nth-of-type(4) .privacy label {
-          font: bold 14px/1 "Roboto"; }
-      #contact .inner .innerHalf1 ul li:nth-of-type(5) {
-        margin-bottom: 0px; }
-        #contact .inner .innerHalf1 ul li:nth-of-type(5) input[type=submit] {
-          width: 60%;
-          height: 70px;
-          background-color: #e60000;
-          border: none;
-          font: bold 20px/1 "Roboto";
-          color: #fff;
-          transition: 0.5s; }
-          #contact .inner .innerHalf1 ul li:nth-of-type(5) input[type=submit]:hover {
-            background-color: #fff;
-            transition: 0.5s;
-            box-shadow: 0 0 0 3px lightgreen inset;
-            color: #e60000; }
-  #contact .inner .innerHalf2 {
-    display: inline-block;
-    width: 39%;
-    height: 690px;
-    background: #f0f0f0;
-    background: url(../img/icebreaker.jpg) no-repeat center/cover;
-    opacity: 0.8;
-    transform: translateY(8.5%);
-    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
-    position: relative; }
-    #contact .inner .innerHalf2 h2 {
-      position: absolute;
-      text-align: left;
-      top: 30px;
-      left: 30px;
-      color: #fff; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(4) h3 {
+          margin-left: 5.5%; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(4) textarea {
+          width: 89%;
+          resize: none;
+          height: 200px;
+          background: #f0f0f0;
+          border: none; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(4) textarea::placeholder {
+          color: #999;
+          font-family: "Roboto";
+          padding: 10px; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(4) .privacy {
+          margin-top: 25px;
+          display: block; }
+          #contact .inner .innerHalf1 ul li:nth-of-type(4) .privacy label {
+            font: bold 14px/1 "Roboto"; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(5) {
+          margin-bottom: 0px; }
+          #contact .inner .innerHalf1 ul li:nth-of-type(5) input[type=submit] {
+            width: 60%;
+            height: 70px;
+            background-color: #e60000;
+            border: none;
+            font: bold 20px/1 "Roboto";
+            color: #fff;
+            transition: 0.5s; }
+            #contact .inner .innerHalf1 ul li:nth-of-type(5) input[type=submit]:hover {
+              background-color: #fff;
+              transition: 0.5s;
+              box-shadow: 0 0 0 3px lightgreen inset;
+              color: #e60000; }
+    #contact .inner .innerHalf2 {
+      display: inline-block;
+      width: 39%;
+      height: 690px;
+      background: #f0f0f0;
+      background: url(../img/icebreaker.jpg) no-repeat center/cover;
+      opacity: 0.8;
+      transform: translateY(8.5%);
+      box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+      position: relative; }
+      #contact .inner .innerHalf2 h2 {
+        position: absolute;
+        text-align: left;
+        top: 30px;
+        left: 30px;
+        color: #fff; }
 
+@media screen and (max-width: 1179px) {
+  #contact .inner {
+    width: 100%; }
+    #contact .inner h1 {
+      text-align: center;
+      margin-left: 0%;
+      margin-bottom: 30px; }
+    #contact .inner .innerHalf1 {
+      width: 60%;
+      margin-right: 0%; }
+    #contact .inner .innerHalf2 {
+      display: none; } }
+@media screen and (max-width: 539px) {
+  #contact .inner {
+    width: 100%; }
+    #contact .inner h1 {
+      text-align: center;
+      margin-left: 0%; }
+    #contact .inner .innerHalf1 {
+      width: 80%;
+      margin-right: 0%; }
+      #contact .inner .innerHalf1 ul li h3 {
+        font: bold 17px/1 "Roboto"; }
+      #contact .inner .innerHalf1 ul li:nth-of-type(1), #contact .inner .innerHalf1 ul li:nth-of-type(2) {
+        display: inline-block;
+        width: 49%; }
+        #contact .inner .innerHalf1 ul li:nth-of-type(1) input::placeholder, #contact .inner .innerHalf1 ul li:nth-of-type(2) input::placeholder {
+          font-size: 11px; }
+      #contact .inner .innerHalf1 ul li:nth-of-type(3) input::placeholder {
+        font-size: 11px; }
+      #contact .inner .innerHalf1 ul li:nth-of-type(4) textarea::placeholder {
+        font-size: 11px; }
+      #contact .inner .innerHalf1 ul li:nth-of-type(5) input[type=submit] {
+        height: 50px;
+        font: bold 15px/1 "Roboto"; } }
 * {
   margin: 0;
   padding: 0;

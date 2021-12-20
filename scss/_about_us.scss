@@ -40,6 +40,14 @@
                     padding: 30px 20px;
                     font: bold 15px/1 "Roboto";
                     color: rgb(230, 0, 0);
+                    transition: 0.3s;
+                }
+
+                &:hover {
+                    a {
+                        color: rgb(102, 189, 230);
+                        transition: 0.3s;
+                    }
                 }
             }
 
