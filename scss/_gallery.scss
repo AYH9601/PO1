@@ -1,4 +1,7 @@
 .gallery {
+    min-height: 500px;
+    
+    border-bottom: 2px solid rgb(240, 240, 240);
     .sub_visual{
         width:100%; 
         height:250px; 
@@ -73,7 +76,10 @@
     
             .loading {
                 width: 100px;
-                position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%);
+                position: fixed; 
+                top: 50%; 
+                left: 50%; 
+                transform: translate(-50%, -50%);
                 transition: 1s;
     
                 &.off {
@@ -82,7 +88,10 @@
             }
     
             #list {
-                width: 100%; transform: translateY(100px); opacity: 0; transition: 1s;
+                width: 100%; 
+                transform: translateY(100px); 
+                opacity: 0; 
+                transition: 1s;
                 
                 &.on {
                     opacity: 1;transform: translateY(0px);
@@ -91,38 +100,64 @@
                 &::after{content: ""; display: block; clear: both;}
     
                 li {
-                    float: left; width: calc(100% / 4); padding: 10px;
+                    float: left; 
+                    width: calc(100% / 2); 
+                    height: 500px;
+                    padding: 10px;
                     box-sizing: border-box;
     
                     div {
-                        width: 100%; padding: 30px;
+                        // background-color: lightcoral;
+                        width: 100%; 
+                        height: 100%;
+                        padding: 30px;
                         box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
-                        box-sizing: border-box; border-radius: 5px;
+                        box-sizing: border-box; 
+                        border-radius: 5px;
+
                         //이미지
                         a {
-                            >img{width: 100%; filter: grayscale(80%); transition: 0.5s;}
+                            width: 100%;
+
+                            >img{
+                                width: 100%; 
+                                height: 60%;
+                                background-size: cover;
+                                overflow: hidden;
+                                filter: grayscale(80%); 
+                                transition: 0.5s;
+                            }
                         }
     
                         //title
                         p {
-                            font: 12px/1.2 "arial"; color: #777;
-                            margin-top: 10px; margin-bottom: 10px;
+                            font: 20px/1.2 "arial"; 
+                            color: #777;
+                            margin-top: 20px; 
+                            margin-bottom: 10px;
                         }
                         //buddyicon + name
                         span {
-                            display: flex; align-items: center; margin-top: 20px;
+                            display: flex; 
+                            justify-content: flex-end;
+                            align-items: center; 
+                            margin-top: 80px;
+
                             >img {
-                                width: 20px; height: 20px; border-radius: 50%;
-                                margin-right: 5px; filter: grayscale(100%);
+                                width: 30px; 
+                                height: 30px; 
+                                border-radius: 10%;
+                                margin-right: 10px; 
+                                filter: grayscale(70%);
                             }
 
-                            strong{font: 11px/1 "arial"; color: #999;}
+                            strong{font: 15px/1 "arial"; color: #999;}
                         }
     
                         &:hover a>img{
                             filter: grayscale(0%); 
-                            transform: scale(105%); 
-                            transition: 0.5s;
+                            // transform: scale(105%); 
+                            transition: 0.2s;
                         }
                     }
                 }
@@ -134,6 +169,7 @@
 }
 
 aside {
+    z-index: 5;
     width: 100%; height: 100vh; background: rgba(0,0,0,0.9);
     position: fixed; top: 0; left: 0;
     padding: 5vw; box-sizing: border-box;
@@ -146,5 +182,6 @@ aside {
     }
     .close {
         position: absolute; top: 20px; right: 20px; color: #fff;
+        cursor: pointer;
     }
 }

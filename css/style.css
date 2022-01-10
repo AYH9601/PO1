@@ -1202,7 +1202,7 @@
   opacity: 0.8;
   margin-bottom: 50px; }
 .youtube .showVideo {
-  width: 1180px;
+  width: 1380px;
   margin: 0 auto;
   padding-top: 50px;
   padding-bottom: 50px; }
@@ -1217,7 +1217,80 @@
       transform: translateY(10px); }
   .youtube .showVideo p {
     color: #999;
-    font: bold 25px/1 "Roboto"; }
+    font: bold 25px/1 "Roboto";
+    margin-bottom: 50px; }
+  .youtube .showVideo .youtubeBox {
+    padding: 0px 40px;
+    background-color: #f0f0f0;
+    height: 600px; }
+    .youtube .showVideo .youtubeBox input[type=text] {
+      display: inline-block;
+      background-color: #fff;
+      width: 200px;
+      height: 35px;
+      border: none;
+      padding-left: 30px;
+      box-sizing: border-box;
+      font: bold 12px/1px "Roboto";
+      margin-top: 45px; }
+    .youtube .showVideo .youtubeBox .btnSearch {
+      display: inline-block;
+      width: 150px;
+      height: 35px;
+      background: #e60000;
+      font: bold 12px/30px "Roboto";
+      color: #fff;
+      text-align: center;
+      cursor: pointer;
+      border: none; }
+    .youtube .showVideo .youtubeBox .tagBox {
+      margin-top: 40px;
+      height: 435px; }
+      .youtube .showVideo .youtubeBox .tagBox ul::after {
+        content: "";
+        display: block;
+        clear: both; }
+      .youtube .showVideo .youtubeBox .tagBox ul li {
+        float: left;
+        cursor: pointer;
+        width: 100%;
+        height: 435px;
+        width: calc(100%/4);
+        filter: grayscale(40%);
+        transition: 0.3s;
+        padding: 5px; }
+        .youtube .showVideo .youtubeBox .tagBox ul li:hover {
+          filter: grayscale(0%);
+          transition: 0.3s; }
+        .youtube .showVideo .youtubeBox .tagBox ul li .img {
+          width: 100%;
+          height: 100%;
+          position: relative;
+          z-index: 2; }
+          .youtube .showVideo .youtubeBox .tagBox ul li .img p {
+            text-align: center;
+            padding-top: 185px;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            color: #fff;
+            font-size: 50px; }
+        .youtube .showVideo .youtubeBox .tagBox ul li:nth-of-type(1) .img {
+          background-image: url(../img/youtubeimg1.jpg);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        .youtube .showVideo .youtubeBox .tagBox ul li:nth-of-type(2) .img {
+          background-image: url(../img/icebreaker.jpg);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        .youtube .showVideo .youtubeBox .tagBox ul li:nth-of-type(3) .img {
+          background-image: url(../img/youtubeimg3.jpg);
+          background-repeat: no-repeat;
+          background-size: cover; }
+        .youtube .showVideo .youtubeBox .tagBox ul li:nth-of-type(4) .img {
+          background-image: url(../img/youtubeimg4.jpg);
+          background-repeat: no-repeat;
+          background-size: cover; }
 .youtube .inner {
   width: 100%;
   height: 100%;
@@ -1310,121 +1383,132 @@
     cursor: pointer;
     font-family: "Roboto"; }
 
-.gallery .sub_visual {
-  width: 100%;
-  height: 250px;
-  background: #f0f0f0;
-  background: url(../img/iceland.jpg) no-repeat center/cover;
-  opacity: 0.8;
-  margin-bottom: 50px; }
-.gallery .inner {
-  width: 1180px;
-  margin: 0 auto; }
-  .gallery .inner h1 {
-    font: bold 30px/1 "Roboto";
-    padding-bottom: 20px;
-    color: #555; }
-    .gallery .inner h1 img {
-      display: inline-block;
-      width: 40px;
-      margin-right: 10px;
-      transform: translateY(10px); }
-  .gallery .inner p {
-    color: #999;
-    font: normal 25px/1 "Roboto"; }
-  .gallery .inner #searchBox {
+.gallery {
+  min-height: 500px;
+  border-bottom: 2px solid #f0f0f0; }
+  .gallery .sub_visual {
     width: 100%;
-    padding: 50px;
-    background-color: #f0f0f0;
-    box-sizing: border-box;
-    font-size: 0;
-    text-align: right; }
-    .gallery .inner #searchBox input[type=text] {
-      width: 250px;
-      height: 35px;
-      padding-left: 15px;
-      box-sizing: border-box;
-      font: bold 12px/1px "Roboto";
-      border: none; }
-    .gallery .inner #searchBox .btnSearch {
-      width: 100px;
-      height: 35px;
-      background: #e60000;
-      font: bold 12px/30px "Roboto";
-      color: #fff;
-      text-align: center;
-      margin-left: 5px;
-      cursor: pointer;
-      border: none;
-      transition: 0.5s; }
-      .gallery .inner #searchBox .btnSearch:hover {
-        background-color: #fff;
-        transition: 0.5s;
-        box-shadow: 0 0 0 3px lightgreen inset;
-        color: #e60000; }
-  .gallery .inner #wrap {
-    width: 100%;
-    padding: 50px 0; }
-    .gallery .inner #wrap .loading {
-      width: 100px;
-      position: fixed;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      transition: 1s; }
-      .gallery .inner #wrap .loading.off {
-        opacity: 0; }
-    .gallery .inner #wrap #list {
+    height: 250px;
+    background: #f0f0f0;
+    background: url(../img/iceland.jpg) no-repeat center/cover;
+    opacity: 0.8;
+    margin-bottom: 50px; }
+  .gallery .inner {
+    width: 1180px;
+    margin: 0 auto; }
+    .gallery .inner h1 {
+      font: bold 30px/1 "Roboto";
+      padding-bottom: 20px;
+      color: #555; }
+      .gallery .inner h1 img {
+        display: inline-block;
+        width: 40px;
+        margin-right: 10px;
+        transform: translateY(10px); }
+    .gallery .inner p {
+      color: #999;
+      font: normal 25px/1 "Roboto"; }
+    .gallery .inner #searchBox {
       width: 100%;
-      transform: translateY(100px);
-      opacity: 0;
-      transition: 1s; }
-      .gallery .inner #wrap #list.on {
-        opacity: 1;
-        transform: translateY(0px); }
-      .gallery .inner #wrap #list::after {
-        content: "";
-        display: block;
-        clear: both; }
-      .gallery .inner #wrap #list li {
-        float: left;
-        width: calc(100% / 4);
-        padding: 10px;
-        box-sizing: border-box; }
-        .gallery .inner #wrap #list li div {
-          width: 100%;
-          padding: 30px;
-          box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-          box-sizing: border-box;
-          border-radius: 5px; }
-          .gallery .inner #wrap #list li div a > img {
+      padding: 50px;
+      background-color: #f0f0f0;
+      box-sizing: border-box;
+      font-size: 0;
+      text-align: right; }
+      .gallery .inner #searchBox input[type=text] {
+        width: 250px;
+        height: 35px;
+        padding-left: 15px;
+        box-sizing: border-box;
+        font: bold 12px/1px "Roboto";
+        border: none; }
+      .gallery .inner #searchBox .btnSearch {
+        width: 100px;
+        height: 35px;
+        background: #e60000;
+        font: bold 12px/30px "Roboto";
+        color: #fff;
+        text-align: center;
+        margin-left: 5px;
+        cursor: pointer;
+        border: none;
+        transition: 0.5s; }
+        .gallery .inner #searchBox .btnSearch:hover {
+          background-color: #fff;
+          transition: 0.5s;
+          box-shadow: 0 0 0 3px lightgreen inset;
+          color: #e60000; }
+    .gallery .inner #wrap {
+      width: 100%;
+      padding: 50px 0; }
+      .gallery .inner #wrap .loading {
+        width: 100px;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: 1s; }
+        .gallery .inner #wrap .loading.off {
+          opacity: 0; }
+      .gallery .inner #wrap #list {
+        width: 100%;
+        transform: translateY(100px);
+        opacity: 0;
+        transition: 1s; }
+        .gallery .inner #wrap #list.on {
+          opacity: 1;
+          transform: translateY(0px); }
+        .gallery .inner #wrap #list::after {
+          content: "";
+          display: block;
+          clear: both; }
+        .gallery .inner #wrap #list li {
+          float: left;
+          width: calc(100% / 2);
+          height: 500px;
+          padding: 10px;
+          box-sizing: border-box; }
+          .gallery .inner #wrap #list li div {
             width: 100%;
-            filter: grayscale(80%);
-            transition: 0.5s; }
-          .gallery .inner #wrap #list li div p {
-            font: 12px/1.2 "arial";
-            color: #777;
-            margin-top: 10px;
-            margin-bottom: 10px; }
-          .gallery .inner #wrap #list li div span {
-            display: flex;
-            align-items: center;
-            margin-top: 20px; }
-            .gallery .inner #wrap #list li div span > img {
-              width: 20px;
-              height: 20px;
-              border-radius: 50%;
-              margin-right: 5px;
-              filter: grayscale(100%); }
-            .gallery .inner #wrap #list li div span strong {
-              font: 11px/1 "arial";
-              color: #999; }
-          .gallery .inner #wrap #list li div:hover a > img {
-            filter: grayscale(0%);
-            transform: scale(105%);
-            transition: 0.5s; }
+            height: 100%;
+            padding: 30px;
+            box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box;
+            border-radius: 5px; }
+            .gallery .inner #wrap #list li div a {
+              width: 100%; }
+              .gallery .inner #wrap #list li div a > img {
+                width: 100%;
+                height: 60%;
+                background-size: cover;
+                overflow: hidden;
+                filter: grayscale(80%);
+                transition: 0.5s; }
+            .gallery .inner #wrap #list li div p {
+              font: 20px/1.2 "arial";
+              color: #777;
+              margin-top: 20px;
+              margin-bottom: 10px; }
+            .gallery .inner #wrap #list li div span {
+              display: flex;
+              justify-content: flex-end;
+              align-items: center;
+              margin-top: 80px; }
+              .gallery .inner #wrap #list li div span > img {
+                width: 30px;
+                height: 30px;
+                border-radius: 10%;
+                margin-right: 10px;
+                filter: grayscale(70%); }
+              .gallery .inner #wrap #list li div span strong {
+                font: 15px/1 "arial";
+                color: #999; }
+            .gallery .inner #wrap #list li div:hover a > img {
+              filter: grayscale(0%);
+              transition: 0.2s; }
 
 aside {
+  z-index: 5;
   width: 100%;
   height: 100vh;
   background: rgba(0, 0, 0, 0.9);
@@ -1444,7 +1528,8 @@ aside {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: #fff; }
+    color: #fff;
+    cursor: pointer; }
 
 #contact {
   border-bottom: 2px solid #f0f0f0; }

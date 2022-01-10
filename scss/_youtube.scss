@@ -11,7 +11,8 @@
     }
 
     .showVideo {
-        width: 1180px;
+
+        width: 1380px;
         margin: 0 auto;
         padding-top: 50px;
         padding-bottom: 50px;
@@ -32,6 +33,104 @@
         p {
             color: #999;
             font: bold 25px/1 "Roboto";
+            margin-bottom: 50px;
+        }
+
+        .youtubeBox {
+            padding: 0px 40px;
+            background-color: rgb(240, 240, 240);
+            height: 600px;
+            input[type=text]{
+                display: inline-block;
+                background-color: #fff;
+                width: 200px;
+                height: 35px;
+                border: none;
+                padding-left: 30px;
+                box-sizing: border-box;
+                font: bold 12px/1px "Roboto";
+                margin-top: 45px;
+            }
+
+            .btnSearch {
+                display: inline-block;
+                width: 150px;
+                height: 35px;
+                background: rgb(230, 0, 0);
+                font: bold 12px/30px "Roboto";
+                color: #fff; 
+                text-align: center;
+                cursor: pointer; 
+                border: none;
+            }
+
+            .tagBox {
+                margin-top: 40px;
+                height: 435px;
+
+                ul {
+                    &::after {content: ""; display: block; clear: both;}
+
+                    li {
+                        float: left;
+                        cursor: pointer;
+                        width: 100%;
+                        height: 435px;
+                        width: calc(100%/4);
+                        filter: grayscale(40%);
+                        transition: 0.3s;
+                        padding: 5px;
+
+                        &:hover {
+                            filter: grayscale(0%);
+                            transition: 0.3s;
+                        }
+                        .img {
+                            width: 100%;
+                            height: 100%;
+                            position: relative;
+                            z-index: 2;
+                            p {
+                                text-align: center;
+                                padding-top: 185px;
+                                top: 0;
+                                left: 0;
+                                z-index: 3;
+                                color: #fff;
+                                font-size: 50px;
+                            }
+                        }
+                        &:nth-of-type(1) {
+                            .img {
+                                background-image: url(../img/youtubeimg1.jpg);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                        &:nth-of-type(2) {
+                            .img {
+                                background-image: url(../img/icebreaker.jpg);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                        &:nth-of-type(3) {
+                            .img {
+                                background-image: url(../img/youtubeimg3.jpg);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                        &:nth-of-type(4) {
+                            .img {
+                                background-image: url(../img/youtubeimg4.jpg);
+                                background-repeat: no-repeat;
+                                background-size: cover;
+                            }
+                        }
+                    }
+                }
+            }
         }
     }
 

@@ -8,11 +8,12 @@ const base = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.interestingness.getList";
 const method2 = "flickr.photos.search";
 const key = "2fb9756d5c2a17287d72e1361294b949"; 
-const per_page = 10; 
+const per_page = 12; 
 const format = "json"; 
 
-//flickr.interestingness.getList 메소드
-const url1 = `${base}method=${method1}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1`;
+//flickr.interestingness.getList 메소드를 베이스로
+//flickr.photos.search 를 통해 기본 태그를 glacier로 설정
+const url1 = `${base}method=${method2}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1&tags=glacier`;
 
 callData(url1);
 
@@ -66,9 +67,7 @@ frame.addEventListener("click", e=>{
     e.preventDefault();
 
     if(e.target == frame) return;
-
     let target = e.target.closest(".item").querySelector(".thumb");
-
     if(e.target == target){
 
         //순간적으로 body의 속성을 overflow:hodden 적용해서 스크롤 기능 방지
