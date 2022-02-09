@@ -76,7 +76,7 @@
 
         table {
             .hidden {
-                display: none;
+                position:absolute; top:-9999px; opacity:0;
             }
             width:100%; 
             border-bottom:2px solid #111; 

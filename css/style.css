@@ -423,7 +423,9 @@
       margin-bottom: 50px;
       border-collapse: collapse; }
       .community .inner table .hidden {
-        display: none; }
+        position: absolute;
+        top: -9999px;
+        opacity: 0; }
       .community .inner table tr:hover td {
         background: #f0f0f0; }
       .community .inner table th {
