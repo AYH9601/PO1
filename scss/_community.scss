@@ -75,6 +75,9 @@
         }
 
         table {
+            .hidden {
+                display: none;
+            }
             width:100%; 
             border-bottom:2px solid #111; 
             margin-bottom:50px;

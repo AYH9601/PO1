@@ -30,7 +30,6 @@ fetch(url)
                         </a>
                         <div class="con">
                             <h2>${title}</h2>
-                            
                         </div>
                     </article>
                 `;
