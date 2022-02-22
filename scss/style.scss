@@ -1390,7 +1390,7 @@ a {text-decoration: none;}
     
     
             h1 {
-                font: bold 18px/1.3 'Roboto'; //변화
+                font: bold 14px/1.3 'Roboto'; //변화
                 color:#fff; 
                 text-align: center;
                 margin-bottom: 150px;
@@ -1549,70 +1549,66 @@ a {text-decoration: none;}
     
             h1 {
                 text-align: center;
-                font: bold 20px/1 "Roboto";
+                font: bold 25px/1 "Roboto";
                 margin-top: 100px;
                 margin-bottom: 10px;
-                display: none;
             }
     
             >h2 {
                 text-align: center;
-                margin-bottom: 50px;
+                margin-bottom: 100px;
                 font: bold 15px/1 "Roboto";
                 color: rgb(230, 0, 0);
-                display: none;
             }
-
+    
             .wrap {
                     width: 100%;
                     background-color: #fff;
-                    margin-bottom: 40px;
-    
-                article {
-                    padding: 0px;
-                    width: 49%;
-                    height: 400px;
+                    margin-bottom: 30px;
+
+                .swiper-slide { 
+                    width: 100%;
+                    height: 450px;
                     float: left;
                     background-color: #fff;
     
-                    &:last-child {
-                        display: none;
-                    }
-    
                     .pic {
-                        width: 370px;
+                        width: 100%;
                         height: 270px;
                         margin: 0 auto;
-                        margin-bottom: 10px;
+                        margin-bottom: 50px;
+                        cursor: pointer;
     
                         img {
-                            width: 300px;
-                            height: 270px;
+                            width: 500px;
+                            height: 300px;
                         }
                     }
     
                     h2 {
                         text-align: center;
-                        margin-bottom: 5px;
+                        margin-bottom: 10px;
     
                         a {
-                            font: bold 20px/1.3 "Roboto";
+                            text-align: center;
+                            font: bold 12px/1 "Roboto";
                             color: #000;
                         }
                     }
     
                     p {
-                        font: bold 14px/1 "Roboto";
+                        display: none;
+                        font: bold 10px/1 "Roboto";
                         color: #999;
                         text-align: center;
                         margin-bottom: 20px;
                     }
     
                     h3 {
+                        display: none;
                         text-align: center;
                         font: bold 25px/1 "Roboto";
                         color: rgb(230, 0, 0);
-                        display: none;
                     }
                 }
             }
@@ -1811,6 +1807,7 @@ a {text-decoration: none;}
                 }
     
                 &:nth-of-type(5) {
+                    display: none;
                     width: 60%;
                     font: bold 12px/1 "Roboto";
                     color: #888;
