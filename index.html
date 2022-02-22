@@ -9,9 +9,14 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" href="img/Frozenfavicon.ico">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
     <script defer src="js/main.js"></script>
     <script defer src="js/clock.js"></script>
     <script defer src="js/weather.js"></script>
+    <script defer src="js/swiper.js"></script>
 </head>
 <body>
     <header id="header">
@@ -117,9 +122,97 @@
             <h1>TOP POPULAR RATING EXPLORATION AREA</h1>
             <h2>We recommend the most popular areas</h2>
 
-            <div class="left"><i class="fas fa-arrow-left"></i></div>
-            <div class="right"><i class="fas fa-arrow-right"></i></div>
+            <!-- <div class="left"><i class="fas fa-arrow-left"></i></div>
+            <div class="right"><i class="fas fa-arrow-right"></i></div> -->
 
+            <div class="wrap swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                            <div class="pic">
+                                <img src="img/North.jpg" alt="북극">
+                            </div>
+                            <h2><a href="#">NORTH POLE</a></h2>
+                            <p>Exploring The Glacier Covered Sea</p>
+                            <h3>$150.50</h3>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="pic">
+                                <img src="img/South.png" alt="남극">
+                            </div>
+                            <h2><a href="#">SOUTH POLE</a></h2>
+                            <p>The Coldest Area In The Earth</p>
+                            <h3>$170.50</h3>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="pic">
+                                <img src="img/reikya.jpg" alt="아이슬란드">
+                            </div>
+                            <h2><a href="#">ICELAND</a></h2>
+                            <p>Reykjavik, With Aurora</p>
+                            <h3>$140.50</h3>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="pic">
+                                <img src="img/greendland.jpg" alt="그린란드">
+                            </div>
+                            <h2><a href="#">GREENLAND</a></h2>
+                            <p>Explore The Denmark Iceburg</p>
+                            <h3>$140.50</h3>
+                    </div>
+                    <div class="swiper-slide">
+                            <div class="pic">
+                                <img src="img/siberia.jpg" alt="시베리아">
+                            </div>
+                            <h2><a href="#">SIBERIA</a></h2>
+                            <p>North Siberia Area</p>
+                            <h3>$150.50</h3>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="pic">
+                            <img src="img/North.jpg" alt="북극">
+                        </div>
+                        <h2><a href="#">NORTH POLE</a></h2>
+                        <p>Exploring The Glacier Covered Sea</p>
+                        <h3>$150.50</h3>
+                </div>
+                <div class="swiper-slide">
+                        <div class="pic">
+                            <img src="img/South.png" alt="남극">
+                        </div>
+                        <h2><a href="#">SOUTH POLE</a></h2>
+                        <p>The Coldest Area In The Earth</p>
+                        <h3>$170.50</h3>
+                </div>
+                <div class="swiper-slide">
+                        <div class="pic">
+                            <img src="img/reikya.jpg" alt="아이슬란드">
+                        </div>
+                        <h2><a href="#">ICELAND</a></h2>
+                        <p>Reykjavik, With Aurora</p>
+                        <h3>$140.50</h3>
+                </div>
+                <div class="swiper-slide">
+                        <div class="pic">
+                            <img src="img/greendland.jpg" alt="그린란드">
+                        </div>
+                        <h2><a href="#">GREENLAND</a></h2>
+                        <p>Explore The Denmark Iceburg</p>
+                        <h3>$140.50</h3>
+                </div>
+                <div class="swiper-slide">
+                        <div class="pic">
+                            <img src="img/siberia.jpg" alt="시베리아">
+                        </div>
+                        <h2><a href="#">SIBERIA</a></h2>
+                        <p>North Siberia Area</p>
+                        <h3>$150.50</h3>
+                </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+<!--
             <div class="wrap">
                 <article>
                     <div class="pic">
@@ -162,7 +255,7 @@
                     <h3>$150.50</h3>
                 </article>
             </div>
-
+-->
             <div class="MORE">
                 <a href="">VIEW ALL AREA ➔</a>
             </div>
@@ -229,7 +322,7 @@
                     <h1><a href="index.html"><img src="img/logo.png" alt="main logo">Frozen</a></h1>
                 </article>
                 <article>
-                    <p>&copy; 2021 DCODELAB EXPEDITION<br>All Right reserved.</p>
+                    <p>&copy; 2021 AYH9601 EXPEDITION<br>All Right reserved.</p>
                 </article>
                 <article>
                     <ul>

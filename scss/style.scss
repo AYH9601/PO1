@@ -491,26 +491,24 @@ a {text-decoration: none;}
                 background-color: #fff;
                 margin-bottom: 80px;
 
-            article { 
-                width: 19%;
+
+            .swiper-slide { 
+                width: 490px;
                 height: 450px;
                 float: left;
-                margin-right: 1%;
+                // margin-right: 5px;
                 background-color: #fff;
 
-                &:last-child {
-                    margin-right:0; 
-                }
-
                 .pic {
-                    width: 374px;
+                    width: 486px;
                     height: 270px;
                     margin: 0 auto;
-                    margin-bottom: 60px;
+                    margin-bottom: 50px;
+                    cursor: pointer;
 
                     img {
-                        width: 374px;
-                        height: 270px;
+                        width: 500px;
+                        height: 300px;
                     }
                 }
 

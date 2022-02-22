@@ -2025,34 +2025,32 @@ a {
       width: 100%;
       background-color: #fff;
       margin-bottom: 80px; }
-      #area .inner .wrap article {
-        width: 19%;
+      #area .inner .wrap .swiper-slide {
+        width: 490px;
         height: 450px;
         float: left;
-        margin-right: 1%;
         background-color: #fff; }
-        #area .inner .wrap article:last-child {
-          margin-right: 0; }
-        #area .inner .wrap article .pic {
-          width: 374px;
+        #area .inner .wrap .swiper-slide .pic {
+          width: 486px;
           height: 270px;
           margin: 0 auto;
-          margin-bottom: 60px; }
-          #area .inner .wrap article .pic img {
-            width: 374px;
-            height: 270px; }
-        #area .inner .wrap article h2 {
+          margin-bottom: 50px;
+          cursor: pointer; }
+          #area .inner .wrap .swiper-slide .pic img {
+            width: 500px;
+            height: 300px; }
+        #area .inner .wrap .swiper-slide h2 {
           text-align: center;
           margin-bottom: 10px; }
-          #area .inner .wrap article h2 a {
+          #area .inner .wrap .swiper-slide h2 a {
             font: bold 20px/1.3 "Roboto";
             color: #000; }
-        #area .inner .wrap article p {
+        #area .inner .wrap .swiper-slide p {
           font: bold 14px/1 "Roboto";
           color: #999;
           text-align: center;
           margin-bottom: 20px; }
-        #area .inner .wrap article h3 {
+        #area .inner .wrap .swiper-slide h3 {
           text-align: center;
           font: bold 25px/1 "Roboto";
           color: #e60000; }
