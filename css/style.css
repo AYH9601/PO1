@@ -1913,7 +1913,12 @@ a {
         width: 295px;
         float: left;
         padding: 20px;
-        text-align: center; }
+        text-align: center;
+        font: bold 40px/3 "Roboto";
+        color: #000; }
+        #visual .inner #figBox2 li span {
+          font: bold 40px/3 "Roboto";
+          color: #000; }
         #visual .inner #figBox2 li h2 {
           font: bold 40px/3 "Roboto";
           color: #000; }

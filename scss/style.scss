@@ -329,7 +329,13 @@ a {text-decoration: none;}
                 float: left;
                 padding: 20px;
                 text-align: center;
+                font: bold 40px/3 "Roboto";
+                color: #000;  
 
+                span {
+                    font: bold 40px/3 "Roboto";
+                    color: #000;    
+                }
 
                 h2 {
                     font: bold 40px/3 "Roboto";
